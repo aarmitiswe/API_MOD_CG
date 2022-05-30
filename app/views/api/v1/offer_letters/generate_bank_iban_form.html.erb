@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title><%= Rails.application.secrets[:ATS_NAME]["original_name"] %></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+        @page {
+            size: A4;
+            margin: 27mm 16mm 27mm 16mm;
+        }
+
+        @media print {
+
+            html,
+            body {
+                width: 210mm;
+                height: 297mm;
+                direction: rtl;
+                -webkit-print-color-adjust: exact; 
+            }
+
+            table tr {
+                page-break-inside: avoid;
+            }
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .logo_letter {
+            text-align: center;
+        }
+
+        .logo_letter img {
+            width: 120px;
+        }
+
+        p {
+            font-size: 14px;
+            display: block;
+            line-height: 23px;
+
+        }
+
+        table {
+            font-size: 14px;
+            border: solid 1px #e5e5e5;
+            margin: 0px auto;
+            width: 100%;
+            border-spacing: 0;
+            direction: rtl;
+        }
+
+        table tr td {
+            border-bottom: solid 1px #e5e5e5;
+            line-height: 20px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        table tr td.eng {
+            text-align: left;
+            background: #fff;
+            border-right: solid 1px #e5e5e5;
+            color: #666;
+            padding: 8px;
+        }
+
+        table tr td.eng strong {
+            font-weight: 600 !important;
+            color: #333;
+        }
+
+        table tr td.arabic {
+            font-family: 'Cairo', sans-serif;
+            text-align: right;
+            font-size: 13px;
+            background: #fff;
+            color: #666;
+            /* direction: rtl; */
+            padding: 8px;
+        }
+
+        table tr td.arabic strong {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700 !important;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- logo -->
+    <div class="logo_letter">
+                 <img src="<%= File.expand_path('app/assets/images/offer-logo.png') %>" style="height: 117px; display: block; margin: 0px auto;">
+    </div>
+
+    <table class="table" align="center" width="100%" style="border: none;">
+        <tr>
+            <td width="50%" class="arabic" style="border: none; padding: 10px 0px; font-family: 'Cairo', sans-serif;">
+                <br>الشؤون التنفيذية
+                <br>وكالة خدمات التميز
+                <br>الإدارة العامة للموارد البشرية
+            </td>
+            <td width="50%" class="eng" style="border: none; padding: 10px 0px; font-family: 'Cairo', sans-serif;">
+                التاريخ:
+            </td>
+        </tr>
+    </table>
+
+    <!-- title -->
+    <h1 style="font-family: 'Cairo', sans-serif;">نموذج بيانات الحساب البنكي</h1>
+
+
+
+    <table class="table" align="center" width="100%" style="margin-bottom: 15px; border: none">
+        <tr>
+            <td colspan="5" width="50%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; font-size: 18px; font-weight: bold; background-color: #29504C; color: #ffffff;">
+                بيانات الموظف
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #f1f1f1; color: #666">
+                الاسم الرباعي
+            </td>
+            <td width="20%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center;">
+                ---
+            </td>
+            <td width="20%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center;">
+                ---
+            </td>
+            <td width="20%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center;">
+                ---
+            </td>
+            <td width="20%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center;">
+                ---
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #f1f1f1; color: #666">
+                المسمى الوظيفي
+            </td>
+            <td colspan="2" width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                ---
+            </td>
+            <td width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #f1f1f1; color: #666">
+                الإدارة
+            </td>
+            <td width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                ---
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #f1f1f1; color: #666">
+                نوع العق
+            </td>
+            <td colspan="2" width="25%" class="arabic"
+                style=" border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                <div>
+                    <input type="checkbox" id="scales" name="scales" checked>
+                    <label for="scales">عسكري أو مدني مكلف</label>
+                </div>
+            </td>
+            <td width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                <div>
+                    <input type="checkbox" id="scales" name="scales" checked>
+                    <label for="scales"> موظف حكومي معار</label>
+                </div>
+            </td>
+            <td width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                <div>
+                    <input type="checkbox" id="scales" name="scales" checked>
+                    <label for="scales">تعاقد مباشر</label>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table" align="center" width="100%" style="margin-bottom: 15px; border: none">
+        <tr>
+            <td colspan="24" width="100%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; font-size: 18px; font-weight: bold; background-color: #29504C; color: #fff">
+                بيانات البنك الجديد
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #f1f1f1;">
+                اسم البنك
+            </td>
+            <td colspan="23" width="20%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center;">
+                ---
+            </td>
+        </tr>
+
+        <tr>
+            <td width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #f1f1f1;">
+                رقم الحساب (الآيبان)
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+            <td width="2%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #ffffff;">
+                -
+            </td>
+        </tr>
+
+    </table>
+
+    <table class="table" align="center" width="100%" style="margin-bottom: 15px; border: none">
+        <tr>
+            <td colspan="2" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; font-size: 18px; font-weight: bold; background-color: #29504C; color: #fff">
+                توقيع مقدم الطلب
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #f1f1f1; color: #666;">
+                الاسم
+            </td>
+            <td width="75%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center;">
+                ---
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center; background-color: #f1f1f1; color: #666">
+                التوقيع
+            </td>
+            <td width="75%" class="arabic"
+                style="border:1px solid #e5e5e5; font-family: 'Cairo', sans-serif; text-align: center;">
+                ---
+            </td>
+        </tr>
+      
+      
+    </table>
+
+
+
+    <table class="table" align="center" width="100%" style="margin-bottom: 15px; border: none">
+        <tr>
+            <td width="50%" class="arabic" style="font-family: 'Cairo', sans-serif; border:none; text-align: right">
+                * يتم تعبئة النموذج إلكترونياً بالحاسب الآلي.
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" class="arabic" style="font-family: 'Cairo', sans-serif; border:none; text-align: right">
+                * إرفاق المخالصة المالية إذا كان هذا الطلب لتغيير الحساب الحالي إلى حساب بنك آخر.
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

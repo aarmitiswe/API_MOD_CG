@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            height: auto;
+            max-width: 940px;
+            /* to centre page on screen*/
+            margin-left: auto;
+            margin-right: auto;
+            font-family: sans-serif;
+            direction: rtl;
+            padding: 30px;
+            font-family: "FS Albert Arabic Web Light";
+        }
+
+@font-face {font-family: "FS Albert Arabic Web Light";
+  src: url('<%= Rails.root.join('app', 'assets', 'fonts', 'fs-albert', '8c8b969c7561bf334608065c3fc6ca5f.eot') %>') format('eot')
+}
+
+@font-face {font-family: "FS Albert Arabic Web Bold";
+ src: url('<%= Rails.root.join('app', 'assets', 'fonts', 'fs-albert', '8c8b969c7561bf334608065c3fc6ca5f.eot') %>') format('eot')
+}
+
+
+
+
+        /* Size : 8.27in and 11.69 inches @page Section1 {
+  size: 8.27in 11.69in;
+  margin: .5in .5in .5in .5in;
+  mso-header-margin: .5in;
+  mso-footer-margin: .5in;
+  mso-paper-source: 0;
+} */
+
+
+        /* style */
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: right;
+            display: block;
+           font-family: "FS Albert Arabic Web Bold";
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        /* div.Section1 {
+  page: Section1;
+  padding: 25px;
+} */
+
+        .logo_letter {
+            text-align: center;
+        }
+
+        span {
+            font-size: 10px;
+            display: block;
+        }
+
+        p {
+            font-size: 10px;
+            display: block;
+            line-height: 20px;
+
+        }
+
+        table {
+            font-size: 10px;
+        }
+
+        table tr td {
+            padding-bottom: 10px;
+        }
+
+        .date {
+            color: #666;
+            text-align: center
+        }
+
+        .italic-heading {
+            display: block;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .italic-text {
+            font-style: italic;
+        }
+
+        .half-width {
+            display: flex;
+            width: 540px;
+        }
+
+        .half-width td {
+            width: 270px;
+        }
+
+        .logo-offer img {
+            width: auto;
+            height: 60px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .offer-footer img {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .signature {
+            width: 100px;
+        }
+
+        #customers {
+           font-family: "FS Albert Arabic Web Light";
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers-border {
+           font-family: "FS Albert Arabic Web Light";
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            padding: 8px;
+            font-size: 16px;
+            text-align: right !important;
+        }
+
+        #customers-border td,
+        #customers-border th {
+            padding: 8px;
+            font-size: 18px;
+            text-align: right !important;
+            border: 1px solid #f1f1f1;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #29504C;
+            color: white;
+        }
+
+        #customers-border tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers-border tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers-border th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #29504C;
+            color: white;
+        }
+
+        .no-border {
+            border: none !important;
+        }
+
+        .align-center {
+            text-align: center !important;
+        }
+
+        .align-center h1 {
+            display: block;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .text-left{
+            text-align: left!important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="Section1">
+        <!-- <div class="logo-offer align-right">
+            <img src="<%= File.expand_path('app/assets/images/offer-logo.png') %>">
+        </div> -->
+        <!-- title -->
+
+        <table id="customers" class="no-border">
+            <tr>
+                <td>
+                    <h2>
+                            وكالة الوزارة لخدمات التميز
+                           <br> الإدارة العامة للموارد البشرية
+                            إدارة التوظيف
+                            <br>(273) 
+
+                    </h2>
+                </td>
+                <td>
+                    <h2 class="text-left">
+                            المرفقات : عدد (1) نموذج هوية  وعدد (1) نسخه هوية وطنية
+                    </h2>
+                </td>
+            </tr>
+        </table>
+        <table id="customers" class="no-border">
+            <tr>
+                <td class="align-center">
+                    <h1>سري للغاية</h1>
+                </td>
+            </tr>
+        </table>
+
+        <table id="customers-border">
+            <tr>
+                <th>#</th>
+                <th>الأسم</th>
+                <th>رقم الهوية</th>
+                <th>المسمى الوظيفي</th>
+                <th>المستوى الوظيفي</th>
+                <th>الوكالة</th>
+                <th>جهةالعمل الحالية</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td><%= @candidate_information_document.name %></td>
+                <td><%= @candidate_information_document.id_number %> </td>
+                <td><%= @candidate_information_document.job_title %> </td>
+                <td><%= @candidate_information_document.job_grade %> </td>
+                <td><%= @candidate_information_document.agency_id %> </td>
+                <td><%= @candidate_information_document.current_employer %> </td>
+            </tr>
+        </table>
+
+        <table id="customers" class="no-border">
+            <tr>
+                <td class="align-center">
+                    <h1>مدير ادارة الأمن والمراسم</h1>
+                </td>
+            </tr>
+        </table>
+        <table id="customers" class="no-border">
+            <tr>
+              <td>
+                السلام عليكم ورحمة الله وبركاته.</br>
+تجدون برفقة عدد (1) مرشح والموضحة هويتها بعالية والمطلوب تزكيتهم أمنياً على نفس الوظائف الموضحة اعلاة مع أرفاق نموذج الهوية ونسخة من الهوية الوطنية.
+                </td>
+            </tr>
+        </table>
+        <table id="customers" class="no-border">
+            <tr>
+                <td>
+                  نأمل بعد اطلاعكم توجية المختصين لديكم بإكمال اللازم مع أرسال كل خطاب على حدة واشعارنا بذلك والسلام عليكم.
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

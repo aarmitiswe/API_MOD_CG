@@ -1,0 +1,35 @@
+<div>
+  <h1>Contact Information</h1>
+  <div class="cnt-inf">
+    <div class="left">
+      <h5>Email : <%= @jobseeker.user.email %></h5>
+      <% if @jobseeker.mobile_phone %>
+          <h5>Mobile: <%= @jobseeker.mobile_phone %></h5>
+      <% end %>
+      <% if @jobseeker.home_phone %>
+          <h5>Mobile: <%= @jobseeker.home_phone %></h5>
+      <% end %>
+    </div>
+    <div class="right">
+                <span class="light">
+                  <p>
+                    <% if @jobseeker.address_line1 %>
+                        <%= @jobseeker.address_line1 %><br>
+                    <% end %>
+                    <% if @jobseeker.address_line2 %>
+                        <%= @jobseeker.address_line2 %><br>
+                    <% end %>
+                    <% if @jobseeker.zip %>
+                        <%= @jobseeker.zip %><br>
+                    <% end %>
+                    <% if @jobseeker.current_city.try(:name) %>
+                        <%= @jobseeker.current_city.name %>, <%= @jobseeker.current_country.name %><br>
+                    <% elsif @jobseeker.current_country.try(:name) %>
+                        <%= @jobseeker.current_country.name %><br>
+                    <% end %>
+                  </p>
+                </span>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+﻿#,position oracle id,job id oracle id,candidate type,job id ,job name,requisition status,unit,section,center,department,general department,deputy,job level,submitted by,employment type,approved date of job
+1,, , ,127,sales,Pending,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Admin Hyrdd,external,-
+2,12391, , ,126,BeatBass,approved,,,,,,Agency 1,Agency 1,Admin Hyrdd,external,24 Mar 2022
+3,222, , ,125,BBORG233,approved,,,,,,BBORG,BBORG,BB Agent,external,16 Feb 2022
+4,222, , ,124,BBORG233,,,,,,,BBORG,BBORG,BB Agent,both,-
+5,422333, , ,123,BBORG JOB CENTER,approved,,,BBORG4,BBORG3,BBORG2,BBORG,BBORG4,BB Agent,external,16 Feb 2022
+6,7465, , ,122,BBJOB,Pending,,,BBORG4,BBORG3,BBORG2,BBORG,BBORG4,Admin Hyrdd,external,-
+7,, , ,121,QA Engineer,approved,,,,,General Dept. 1,Agency 1,General Dept. 1,Agency Manager,internal,10 Feb 2022
+8,, , ,120,Software Engineer,approved,,,,,General Dept. 1,Agency 1,General Dept. 1,Agency Manager,both,25 Jan 2022
+9,6666, , ,119,AABBCC,,,,,,sdsd,SJ02,sdsd,Admin Hyrdd,both,-
+10,, , ,118,Software Engineer,,,,,,General Dept. 1,Agency 1,General Dept. 1,Agency Manager,both,-
+11,, , ,117,Software Engineer,,,,,,General Dept. 1,Agency 1,General Dept. 1,Agency Manager,both,-
+12,, , ,116,Software Engineer,,,,,,General Dept. 1,Agency 1,General Dept. 1,Agency Manager,both,-
+13,, , ,113,Data Science,Pending,,,,,,Agency 1,Agency 1,Hiring Manager Recruiter,both,-
+14,, , ,112,Consultant ,approved,,,,,Cg Job,DeputyCg,Cg Job,Admin Hyrdd,both,06 Jan 2022
+15,34, , ,111,dsdsd,,,,,,,ABC,ABC,Admin Hyrdd,both,-
+16,, , ,110,وظيفة 1094,,,,,Muzummil,General Dept. 1,Agency 1,Muzummil,Admin Hyrdd,both,-
+17,, , ,109,Consultant,Pending,,,,,General Dept. 1,Agency 1,General Dept. 1,Mohamed Yakout,both,-
+18,0, , ,108,Rec Manager,Pending,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,both,-
+19,9933, , ,107,test,approved,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,both,18 Feb 2021
+20,, , ,106,Ruby Dev,Pending,,,,Department 1,General Dept. 1,Agency 1,Department 1,Department Manager,external,-
+21,, , ,105,PHP Developer,approved,,,,,,Agency 1,Agency 1,Agency Manager,both,17 Jan 2021
+22,, , ,103,Consultant,,,,,,General Dept. 1,Agency 1,General Dept. 1,Agency Manager,both,-
+23,, , ,102,Consultant,,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,both,-
+24,, , ,101,Consultant,,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,both,-
+25,, , ,100,Consultant,,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,both,-
+26,, , ,99,Consultant,rejected,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,both,-
+27,9933, , ,98,test,,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,both,-
+28,, , ,97,PM,approved,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,external,08 Nov 2020
+29,, , ,96,PM,rejected,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,internal,-
+30,, , ,95,PM,rejected,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,both,-
+31,, , ,94,Test,approved,,,,,,Agency 1,Agency 1,Agency Manager,both,19 Oct 2020
+32,, , ,93,مسؤول موارد بشرية,approved,,,,,,Agency 1,Agency 1,Agency Manager,both,29 Sep 2020
+33,, , ,92,Test,,,,,,,Agency 1,Agency 1,Agency Manager,external,-
+34,, , ,91,Talent manager,approved,,,,,,Agency 1,Agency 1,Agency Manager,both,07 Sep 2020
+35,, , ,90,Muzummil,approved,,,,Muzummil,General Dept. 1,Agency 1,Muzummil,Agency Manager,both,06 Sep 2020
+36,, , ,89,التقييم ,approved,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,both,03 Sep 2020
+37,, , ,88,No Assessment,approved,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,both,02 Sep 2020
+38,, , ,87,QA Engineer,approved,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,both,31 Aug 2020
+39,, , ,86,QA Engineer,rejected,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,internal,-
+40,, , ,85,MUZUMMIL,approved,,,,Department 1,General Dept. 1,Agency 1,Department 1,Department Manager,internal,30 Aug 2020
+41,, , ,65,مسؤول موارد بشرية,Pending,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,both,-
+42,, , ,64,GR Officer,approved,,,,,,Agency 1,Agency 1,Agency Manager,both,20 Aug 2020
+43,, , ,63,Data Science,,,,,,,Agency 1,Agency 1,Agency Manager,internal,-
+44,, , ,62,Developer,approved,,,,,,Agency 1,Agency 1,Agency Manager,both,20 Aug 2020
+45,, , ,61,Officer,approved,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,both,20 Aug 2020
+46,, , ,60,Agent,approved,,,,,,Agency 1,Agency 1,Agency Manager,both,15 Aug 2020
+47,, , ,59,ABC,approved,,,,Department 1,General Dept. 1,Agency 1,Department 1,GDepartment Manager,both,15 Aug 2020
+48,, , ,58,Test,approved,,,,,,MOHAMED-DEPUTY-1,MOHAMED-DEPUTY-1,M-DEPUTY M-DEPUTY,both,06 Aug 2020
+49,, , ,57,Support,approved,MOHAMED-UNIT-1,MOHAMED-SEC-1,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-UNIT-1,M-U M-U,internal,06 Aug 2020
+50,, , ,56,PM,approved,MOHAMED-UNIT-1,MOHAMED-SEC-1,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-UNIT-1,M-U M-U,external,06 Aug 2020
+51,, , ,55,MUZUMMIL,,,,,,,MUZUMMIL,MUZUMMIL,Recruitment Manager,external,-
+52,, , ,54,MUZUMMIL,,,,,,,MUZUMMIL,MUZUMMIL,Recruitment Manager,external,-
+53,, , ,53,Tareq,,MOHAMED-UNIT-1,MOHAMED-SEC-1,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-UNIT-1,M-U M-U,both,-
+54,, , ,52,QA Engineer,,,,,,General Dept. 1,Agency 1,General Dept. 1,Recruitment Manager,internal,-
+55,, , ,51,Ruby Dev,rejected,,,,Department 1,General Dept. 1,Agency 1,Department 1,Department Manager,both,-
+56,, , ,50,Test-UNIT,,MOHAMED-UNIT-1,MOHAMED-SEC-1,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-UNIT-1,M-GD M-GD,internal,-
+57,232323, , ,45,Tester,Pending,,,,,General Dept. 1,Agency 1,General Dept. 1,Agency Manager,internal,-
+58,, , ,44,Test Tareq,Pending,MOHAMED-UNIT-1,MOHAMED-SEC-1,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-UNIT-1,M-U M-U,both,-
+59,, , ,43,TEST-C,Pending,,,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-C-1,M-GD M-GD,both,-
+60,, , ,42,Dep1 Test,Pending,,,,Department 1,General Dept. 1,Agency 1,Department 1,Agency Manager,internal,-
+61,, , ,41,Project Manager,rejected,MOHAMED-UNIT-1,MOHAMED-SEC-1,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-UNIT-1,M-U M-U,both,-
+62,, , ,40,Machine Learning,Pending,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,GDepartment Manager,external,-
+63,, , ,39,TESTING,Pending,MOHAMED-UNIT-1,MOHAMED-SEC-1,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-UNIT-1,M-GD M-GD,,-
+64,, , ,38,وظيفة 1821,Pending,,قسم 1,,إدارة 6,الادارة العامة 1,وكالة 2,قسم 1,محمد 120 محمد 120,,-
+65,, , ,37,.Net Developer,Pending,تطبيقات التوظيف,التوظيف,,الموارد البشرية,الدعم الاداري,التميز,تطبيقات التوظيف,Alaa Rshyed,,-
+66,, , ,36,MUZUMMIL,Pending,,,,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-DP-1,M-GD M-GD,,-
+67,, , ,35,وظيفة مدير مالي,approved,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,both,19 Jul 2020
+68,, , ,34,test by Alaa,Pending,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,,-
+69,0, , ,30,Rec Manager,rejected,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,GDepartment Manager,,-
+70,, , ,29,tareq job,approved,,,,tare-d,tareq-gd,tareq-d,tare-d,tareq tareq,both,14 Jul 2020
+71,, , ,28,وظيفة 103,Pending,,,,إدارة 101,الادارة العامة 1,وكالة 1,إدارة 101,محمد 159 محمد 159,,-
+72,, , ,27,وظيفة 1282,Pending,,قسم 1,,إدارة 97,الادارة العامة 1,وكالة 2,قسم 1,محمد 45 محمد 45,,-
+73,, , ,26,MOHAMED-JOB,Pending,,MOHAMED-SEC-1,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-SEC-1,MOHAMED MOHAMED,,-
+74,, , ,25,M-U-JOB,approved,MOHAMED-UNIT-1,MOHAMED-SEC-1,MOHAMED-C-1,MOHAMED-DP-1,MOHAMED-GD-1,MOHAMED-DEPUTY-1,MOHAMED-UNIT-1,M-U M-U,both,13 Jul 2020
+75,, , ,23,HR-IT,approved,تطبيقات التوظيف,التوظيف,,الموارد البشرية,الدعم الاداري,التميز,تطبيقات التوظيف,Alaa Rshyed,,12 Jul 2020
+76,, , ,22,HR-IT,Pending,تطبيقات التوظيف,التوظيف,,الموارد البشرية,الدعم الاداري,التميز,تطبيقات التوظيف,Alaa Rshyed,,-
+77,, , ,21,Software Developer,approved,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,both,12 Jul 2020
+78,, , ,20,MUZUMMIL,approved,,,,Department 1,General Dept. 1,Agency 1,Department 1,Department Manager,,12 Jul 2020
+79,, , ,19,Recruitment Manager,Pending,تطبيقات التوظيف,التوظيف,,الموارد البشرية,الدعم الاداري,التميز,تطبيقات التوظيف,Alaa Rshyed,,-
+80,, , ,18,sales,rejected,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,GDepartment Manager,,-
+81,, , ,17,Software Engineer,,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,,-
+82,, , ,16,Software Engineer,,,,,,General Dept. 1,Agency 1,General Dept. 1,GDepartment Manager,internal,-
+83,, , ,15,وظيفة 1094,approved,وحدة,,,إدارة 97,الادارة العامة 1,وكالة 2,وحدة,Alaa Rshyed,both,10 Jul 2020
+84,, , ,14,Dep1 Test,Pending,,,,Department 1,General Dept. 1,Agency 1,Department 1,Department Manager,,-
+85,, , ,13,Dep1 Test,Pending,,,,Department 1,General Dept. 1,Agency 1,Department 1,Department Manager,,-
+86,, , ,12,Dep1 Test,Pending,,,,Department 1,General Dept. 1,Agency 1,Department 1,Department Manager,,-
+87,, , ,11,Dep1 Test,Pending,,,,Department 1,General Dept. 1,Agency 1,Department 1,Department Manager,,-
+88,, , ,8,Software Engineer,Pending,,,,,General Dept. 1,Agency 1,General Dept. 1,Agency Manager,,-
+89,, , ,7,وظيفة مدير مالي,approved,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,,30 Jun 2020
+90,, , ,5,Software Developer,rejected,Unit 1,Section 1,Center 1,Department 1,General Dept. 1,Agency 1,Unit 1,Unit Manager,,-

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.5cm;
+        }
+
+        page[size="A4"] {
+            width: 21cm;
+            height: auto;
+        }
+
+        page[size="A4"][layout="landscape"] {
+            width: 29.7cm;
+            height: 21cm;
+        }
+
+        table {
+            width: 100%;
+            font-size: 14px;
+        }
+        .arabic table{
+           direction: rtl;
+        }
+
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            padding: 8px;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <page size="A4">
+        <!-- section -->
+        <table>
+            <tr>
+                <td style="text-align: center; font-size: 30px; display: block; padding: 20px;">
+<!--                    <img src="http://staging11.hyrdd.com/assets/images/custom-images/logo2.svg" height="120px" alt="">-->
+                  <img src="<%= File.expand_path('app/assets/images/offer-logo.png') %>" style="height: 117px; display: block; margin: 0px auto;">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; font-size: 30px; display: block; padding: 20px;">
+                    Interview Form
+                </td>
+            </tr>
+        </table>
+        <!-- end section -->
+
+        <!-- section -->
+        <table id="customers">
+            <tr>
+                <td style="width: 25%;">
+                    Candidate Name:
+                </td>
+                <td style="width: 25%;">
+                  <%= @jobseeker.full_name %>
+                </td>
+                <td style="width: 25%;">
+                    Position Consider For:
+                </td>
+                <td style="width: 25%;">
+                  <%= @job.title %>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">
+                    Name of Interviewer:
+                </td>
+                <td style="width: 25%;">
+                  <%= @interview_committee_member.try(:full_name) || 'NA' %>
+                </td>
+                <td style="width: 25%;">
+                    Position:
+                </td>
+                <td style="width: 25%;">
+                  <%#= @job.position.ar_job_title || @job.position.job_title %>
+                  <%= @interview_committee_member.try(:position) || 'NA' %>
+                </td>
+            </tr>
+        </table>
+        <!-- section end-->
+        <br>
+
+        <!-- section -->
+        <table>
+            <tr>
+                <td style="background-color: #29504C; padding: 10px; color: #fff; margin-top: 20px; font-weight: bold; font-size: 16px;">
+                    Work Knowledge
+                </td>
+            </tr>
+        </table>
+        <!-- section  end-->
+        <br>
+        <!-- section -->
+        <table id="customers" style="border:none!important">
+            <tr>
+                <td style="font-weight:bold">
+                    WORK EXPERIENCE
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (Consider similar job duties, similar working environment, same degree of supervisory and
+                    management responsibility)
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #ddd;">
+                  <%= @job_application.get_answer_by_question_name('work_experience_rating') %>
+
+
+                </td>
+            </tr>
+            <% if @evaluation_submit.get_answer_by_question_name('work_experience_comment').present? %>
+              <tr>
+                <td>
+                  Comments
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; background-color: #f9f9f9;">
+                  <%= @evaluation_submit.get_answer_by_question_name('work_experience_comment') %>
+                </td>
+              </tr>
+            <% end %>
+        </table>
+        <!-- section end-->
+        <br>
+        <!-- section -->
+        <table id="customers" style="border:none!important">
+            <tr>
+                <td style="font-weight:bold">
+                    EDUCATION, TRAINING & PROFESSIONAL QUALIFICATIONS
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (Consider formal education, major fields of study, specialized training received for the
+                    relevant position, results/grades achieved)
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #ddd;">
+
+                  <%= @job_application.get_answer_by_question_name('education_rating') %>
+                </td>
+            </tr>
+          <% if @evaluation_submit.get_answer_by_question_name('education_comment').present? %>
+              <tr>
+                <td>
+                  Comments
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; background-color: #f9f9f9;">
+                  <%= @evaluation_submit.get_answer_by_question_name('education_comment') %>
+                </td>
+              </tr>
+        <% end %>
+
+        </table>
+        <!-- section end-->
+
+        <br>
+        <!-- section -->
+        <table id="customers" style="border:none!important">
+            <tr>
+                <td style="font-weight:bold">
+                    TECHNICAL COMPETENCE
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (Consider knowledge, understanding and technical expertise of candidate as it relates to
+                    the requirements of the position)
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #ddd;">
+                  <%= @evaluation_submit.get_answer_by_question_name('technical_competence_rating') %>
+                </td>
+            </tr>
+            <% if @evaluation_submit.get_answer_by_question_name('technical_competence_comment').present? %>
+              <tr>
+                <td>
+                  Comments
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; background-color: #f9f9f9;">
+                  <%= @evaluation_submit.get_answer_by_question_name('technical_competence_comment') %>
+                </td>
+              </tr>
+            <% end %>
+
+        </table>
+        <!-- section end-->
+        <br>
+
+        <!-- section -->
+        <table>
+            <tr>
+                <td
+                    style="background-color: #29504C; padding: 10px; color: #fff; margin-top: 20px; font-weight: bold; font-size: 16px;">
+                    Personality</td>
+            </tr>
+        </table>
+        <!-- section  end-->
+
+        <br>
+        <!-- section -->
+        <table id="customers" style="border:none!important">
+            <tr>
+                <td style="font-weight:bold">
+                    APPEARANCE MANNER AND PERSONALITY
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (Consider general appearance, speech, nervous mannerisms, self-confidence,
+                    aggressiveness, poise, composure, overall presentation, maturity)
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #ddd;">
+
+                  <%= @evaluation_submit.get_answer_by_question_name('personality_rating') %>
+                </td>
+            </tr>
+
+            <% if @evaluation_submit.get_answer_by_question_name('personality_comment').present? %>
+              <tr>
+                <td>
+                  Comments
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; background-color: #f9f9f9;">
+
+                  <%= @evaluation_submit.get_answer_by_question_name('personality_comment') %>
+                </td>
+              </tr>
+            <% end %>
+
+        </table>
+        <!-- section end-->
+        <!-- section end-->
+        <br>
+        <!-- section -->
+        <table id="customers" style="border:none!important">
+            <tr>
+                <td style="font-weight:bold">
+                    SUPERVISORY AND LEADERSHIP QUALIFICATION/POTENTIAL
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (Consider previous supervisor/leadership experience, degree of assertiveness, confidence
+                    level, acceptance of authority and responsibility, ability to motivate others)
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #ddd;">
+
+
+                  <%= @evaluation_submit.get_answer_by_question_name('personality_leadership_rating') %>
+                </td>
+            </tr>
+            <% if @evaluation_submit.get_answer_by_question_name('personality_leadership_comment').present? %>
+              <tr>
+                <td>
+                  Comments
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; background-color: #f9f9f9;">
+
+
+                  <%= @evaluation_submit.get_answer_by_question_name('personality_leadership_comment') %>
+                </td>
+              </tr>
+            <% end %>
+
+        </table>
+        <!-- section end-->
+        <br>
+        <!-- section -->
+        <table>
+            <tr>
+                <td
+                    style="background-color: #29504C; padding: 10px; color: #fff; margin-top: 20px; font-weight: bold; font-size: 16px;">
+                    Attitude</td>
+            </tr>
+        </table>
+        <!-- section  end-->
+
+
+        <br>
+        <!-- section -->
+        <table id="customers" style="border:none!important">
+            <tr>
+                <td style="font-weight:bold">
+                    ATTITUDE, STABILITY AND MATURITY
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (Consider friction with former supervisors, peer relationships, reasons for leaving jobs,
+                    frequency of job changes, consider sense of responsibility, attitude towards work and
+                    towards family)
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #ddd;">
+
+                  <%= @evaluation_submit.get_answer_by_question_name('maturity_rating') %>
+                </td>
+            </tr>
+            <% if @evaluation_submit.get_answer_by_question_name('maturity_comment').present? %>
+              <tr>
+                <td>
+                  Comments
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; background-color: #f9f9f9;">
+
+                  <%= @evaluation_submit.get_answer_by_question_name('maturity_comment') %>
+                </td>
+              </tr>
+            <% end %>
+
+        </table>
+        <!-- section end-->
+        <br>
+        <!-- section -->
+        <table id="customers" style="border:none!important">
+            <tr>
+                <td style="font-weight:bold">
+                    SUPERVISORY AND LEADERSHIP QUALIFICATION/POTENTIAL
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (Consider previous supervisor/leadership experience, degree of assertiveness, confidence
+                    level, acceptance of authority and responsibility, ability to motivate others)
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #ddd;">
+
+                  <%= @evaluation_submit.get_answer_by_question_name('attitude_leadership_rating') %>
+                </td>
+            </tr>
+            <% if @evaluation_submit.get_answer_by_question_name('attitude_leadership_comment').present? %>
+              <tr>
+                <td>
+                  Comments
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; background-color: #f9f9f9;">
+
+                  <%= @evaluation_submit.get_answer_by_question_name('attitude_leadership_comment') %>
+                </td>
+              </tr>
+            <% end %>
+
+        </table>
+        <!-- section end-->
+
+        <br>
+        <!-- section -->
+        <table>
+            <tr>
+                <td
+                    style="background-color: #29504C; padding: 10px; color: #fff; margin-top: 20px; font-weight: bold; font-size: 16px;">
+                    Expression</td>
+            </tr>
+        </table>
+        <!-- section  end-->
+
+        <br>
+        <!-- section -->
+        <table id="customers" style="border:none!important">
+            <tr>
+                <td style="font-weight:bold">
+                    INTER-PERSONAL AND COMMUNICATION SKILLS
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (Consider liking for and ability to get along with people; ability to maintain pleasant
+                    inter-relationships with supervisors, peers and subordinates; ability to communicate
+                    ideas and thoughts in a clear, concise and organized manner)
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #ddd;">
+
+                  <%= @evaluation_submit.get_answer_by_question_name('communication_rating') %>
+                </td>
+            </tr>
+            <% if @evaluation_submit.get_answer_by_question_name('communication_comment').present? %>
+              <tr>
+                <td>
+                  Comments
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; background-color: #f9f9f9;">
+
+                  <%= @evaluation_submit.get_answer_by_question_name('communication_comment') %>
+                </td>
+              </tr>
+            <% end %>
+        </table>
+        <!-- section end-->
+
+      <table id="customers" style="border:none!important">
+        <tr>
+          <td style="font-weight:bold">
+            Total Score
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= @evaluation_submit.get_answer_by_question_name('total_score') %>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold">
+
+            Interview Comment
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; background-color: #f9f9f9;">
+            <%= @evaluation_submit.get_answer_by_question_name('interview_comment') %>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold">
+            Recommendation:
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; background-color: #f9f9f9;">
+
+            <%= @evaluation_submit.get_answer_by_question_name('recommendation') %>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold">
+            Date:
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; background-color: #f9f9f9;">
+
+            <%= @evaluation_submit.created_at.strftime("%d/%m/%Y") %>
+          </td>
+        </tr>
+      </table>
+    </page>
+
+</body>
+
+</html>

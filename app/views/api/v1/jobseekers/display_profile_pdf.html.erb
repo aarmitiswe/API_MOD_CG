@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <%= wicked_pdf_stylesheet_link_tag "jobseekers.css" -%>
+
+  </head>
+  <body>
+  <div class="save-pdf">
+    <div class="res-hed" style="background-color: <%= Rails.application.secrets[:ATS_CSS]["colors"]["primary"] %>">
+      <div class="res-lft">
+        <h1><%= "#{@jobseeker.user.first_name} #{@jobseeker.user.last_name}" %></h1>
+        <% if @jobseeker.current_experience %>
+            <h4>
+              <i class="icon-account"></i>
+              <span class="white">
+            <%= @jobseeker.current_experience.position %>
+          </span>
+            </h4>
+            <h4>
+              <i class="icon-company"></i>
+              <%= @jobseeker.current_experience.company_name %>
+            </h4>
+        <% else %>
+            <h4>
+              <i class="icon-account"></i>
+              <span class="white"> No Position </span>
+            </h4>
+            <h4>
+              <i class="icon-company"></i> No Company
+            </h4>
+      <% end %>
+        <% if @jobseeker.sector %>
+            <h4><i class="icon-sector"></i> <%= @jobseeker.sector.name %></h4>
+        <% end %>
+        <h4><i class="icon-location"></i> <%= "#{@jobseeker.user.city.try(:name)}, #{@jobseeker.user.country.try(:name)}" %></h4>
+      </div>
+      <div class="res-rgt">
+        <%= wicked_pdf_image_tag @jobseeker.user.avatar(:original) %>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="res-contnt">
+      <%= render 'contact_info' %>
+      <%= render 'general_information' %>
+      <% if @jobseeker.summary %>
+          <div>
+            <h1>Summary</h1>
+            <p class="light padding-20-0" style="word-wrap: break-word; text-align: justify">
+              <%= @jobseeker.summary %>
+            </p>
+          </div>
+      <% end %>
+    </div>
+
+    <div class="res-contnt">
+      <% if @jobseeker.jobseeker_experiences.count > 0 %>
+          <%= render 'experience' %>
+      <% end %>
+      <% if @jobseeker.jobseeker_educations.count > 0 %>
+          <%= render 'education' %>
+      <% end %>
+      <% if @jobseeker.jobseeker_certificates.count > 0 %>
+          <%= render 'certificate' %>
+      <% end %>
+    </div>
+
+  <% if @jobseeker.skills.count > 0 %>
+        <div class="res-contnt">
+          <%= render 'skills' %>
+        </div>
+  <% end %>
+
+
+    <div class="ftr-logo">
+      <%= wicked_pdf_image_tag "#{Rails.application.secrets['BACKEND']}/email_templates/mail-logo.png" %>
+    </div>
+  </div>
+
+  </body>
+</html>

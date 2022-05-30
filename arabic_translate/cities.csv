@@ -1,0 +1,1576 @@
+Id,eng_name,
+,Kabul, كابول
+,Kandahar,  مزار الشريف
+,Mazar-e Sharif,  قندهار
+,Tirana, تيرانا
+,Annaba, عنابة
+,Batna, باتنة
+,Algiers, الجزائر
+,Biskra, بسكرة
+,Boumerdas, بومرداس
+,Constantine, قنستنطينة
+,Oran, وهران
+,Tébessa,تبسه
+,Andorra la Vella,  أندورا لا فيلا
+,Luanda, لواندا
+,N’dalatando,ندالاتاندو
+,Buenos Aires,  بوينس آيرس
+,Córdoba,قرطبة
+,Corrientes, كورينتس
+,La Plata,  لابلاتا
+,Mar del Plata,  مار ديل بلاتا
+,Mendoza, ميندوزا
+,Morón,مورون
+,Posadas, بوساداس
+,Quilmes, كويلمس
+,Resistencia, ريسيستينكا
+,Rosario, روزاريو
+,Salta, سالتا
+,San Juan,  سان خوان
+,San Miguel de Tucumán,سان ميغيل دي توكومان
+,San Salvador de Jujuy,  سان سلفادور دي خوخوي
+,Santa Fe de la Vera Cruz, سانتا فيدالافيرا كروز
+,Santiago del Estero,  سانتياغو ديل إستيرو
+,Yerevan, يريفان
+,Adelaide, أديليد
+,Brisbane, بريسبان
+,Canberra,كانبيرا
+,Gold Coast,جولد كوست (الشاطئ الذهبي)
+,Melbourne,ملبورن
+,Newcastle,نيوكاسل
+,Perth,بيرث
+,Sydney,سيدني
+,Vienna,فيينا
+,Baku,باكو
+,Ganja,غانجا
+,Nassau,ناسو
+,Manama,المنامة
+,Chittagong,شيتاجونج
+,Comilla,كوميلا
+,Dhaka,دكا
+,Khulna,كولنا
+,Rajshahi,راجشاهي
+,Rangpur,رانجبور
+,Tungi,تونجي
+,Bridgetown,بريدج تاون
+,Brest,بريست
+,Gomel,غوميل
+,Hrodna,هرودنا
+,Mahilyow,موليليو
+,Minsk,مينسك
+,Vitebsk,فيتبسك
+,Antwerpen,أنتويرب
+,Brussels,بروكسل
+,Belmopan,بيلموبان
+,Abomey-Calavi,أبومي-كالافي
+,Cotonou,كوتونو
+,Thimphu,تيمفو
+,Cochabamba,كوتشابامبا
+,La Paz,لاباز
+,Santa Cruz de la Sierra,سانتا كروز دي لا سييرا
+,Sarajevo,سراييفو
+,Gaborone,جابورون
+,Ananindeua,أنانينديوا
+,Anápolis,أنابوليس
+,Aparecida de Goiânia,
+,Aracaju,أراكاجو
+,Bauru,باورو
+,Belém,
+,Belford Roxo,بلفورد روكسو
+,Belo Horizonte,بيلو هوريزونتي
+,Betim,بيتيم
+,Brasília,بيليم
+,Campina Grande,كامبينا غراندي
+,Campinas,كامبيناس
+,Campo Grande,كامبو غراندي
+,Campos,كامبوس
+,Canoas,كانواس
+,Carapicuíba,كارابيكويبا
+,Caxias do Sul,كاكسياس دو سول
+,Contagem, كونتاجيم
+,Cuiabá,كويابا
+,Curitiba,كوريتيبا
+,Diadema,دياديما
+,Duque de Caxias, دوكي دي كاكسياس
+,Feira de Santana,فييرا دي سانتانا
+,Florianópolis,
+,Fortaleza,فورتاليزا
+,Franca,فرانكا
+,Goiânia,غويانيا
+,Guarujá,جواروجا
+,Guarulhos,جوارولوس
+,Itaquaquecetuba, إيتاكاكيسيتوبا
+,Jaboatão,جابواتاو
+,Jaboatão dos Guararapes,مقاطعة غالواي
+,João Pessoa,غرب ساسكس
+,Joinville,جوينفيل
+,Juiz de Fora,جويز دي فورا
+,Jundiaí,جونديا 
+,Londrina,لوندرينا
+,Macapá,ماكابا 
+,Maceió,ماسيو
+,Manaus,ماناوس
+,Maringá,مارينغا 
+,Mauá,ماو أ
+,Mogi das Cruzes, موجي داس كروز
+,Montes Claros,مونتيس كلاروس
+,Natal,ناتال
+,Niterói,نيتيروي
+,Nova Iguaçu,ايغواسو جديد
+,Olinda,أوليندا
+,Osasco,أوساسكو
+,Pelotas,بيلوتاس
+,Piracicaba,بيراسيكابا
+,Porto Alegre,بورتو أليغري
+,Porto Velho,بورتو فيلهو
+,Recife,ريسيفي
+,Ribeirão das Neves, ريبيراو داس نيفيس
+,Ribeirão Preto,
+,Rio de Janeiro,ريو دي جانيرو
+,Salvador,سلفادور
+,Santo André,سانتو أندرا
+,Santos,سانتوس
+,São Bernardo do Campo,ساو برناردو دو كامبو
+,São João de Meriti,ساو جواو دي ميريتي
+,São José do Rio Preto,ساو جوزيه دو ريو بريتو
+,São José dos Campos,رحلات رخيصة من ساو جوزيه دوس كامبوس
+,São Luís,ساو لويس
+,São Paulo,مقاطعة دبلن فنادق
+,São Vicente,سانت فنسنت
+,Serra,سيرا
+,Sorocaba,سوروكابا
+,Teresina,تيريسينا
+,Uberlândia,أبرلانديا
+,Vila Velha, فيلا فيلها
+,Vitória,فيت أريا
+,Bandar Seri Begawan,بندر سري بيغاوان
+,Plovdiv,بلوفديف
+,Sofia,صوفيا
+,Varna,فارنا
+,Bobo-Dioulasso,بوبو ديولاسو
+,Ouagadougou,واغادوغو
+,Bujumbura,بوجومبورا
+,Phnom Penh,بنوم بنه
+,Takeo,تاكيو
+,Bamenda,بامندا
+,Douala,دوالا
+,Garoua,جاروا
+,Kousséri,كوسيري
+,Maroua,ماروة
+,Yaoundé,ياوندي
+,Brampton,برامبتون
+,Calgary,كالجاري
+,Edmonton,إدمونتون
+,Etobicoke, إتوبيكوك
+,Halifax,هاليفاكس
+,Hamilton,هاميلتون
+,Laval,لافال
+,London,لندن
+,Mississauga,ميسيساجا
+,Montréal,مونتريال
+,North York,شمال يورك
+,Ottawa,أوتاوا
+,Québec,كيبيك
+,Scarborough,سكاربورو
+,Surrey,سَري
+,Toronto,تورنتو
+,Vancouver,فانكوفر
+,Winnipeg,وينيبيج
+,Praia,برايا
+,George Town,جورج تاون
+,Bangui,بانغي
+,N'Djamena,نجامينا
+,Antofagasta,أنتوفاجاستا
+,Puente Alto,بونتي ألتو
+,Santiago,سانتياجو
+,Aksu,اكسو
+,Anqing,ان تشينغ
+,Anshan,انشان
+,Anshun, انشون
+,Anyang,انيانغ
+,Baicheng,بايتشنغ
+,Baoding,باودينغ
+,Baotou,باوتو
+,Bei’an,بيآن
+,Beijing,بكين
+,Bengbu,بنغبو
+,Benxi,بنشي
+,Cangzhou,تسانغتشو
+,Changchun,تشانغتشون
+,Changde,تشانغده
+,Changsha,تشانغشا
+,Changshu City,مدينة تشانغشو
+,Changzhi,تشانغزهي 
+,Changzhou,تشانغزهو
+,Chaoyang,تشاويانغ
+,Chaozhou,تشاوزهو
+,Chengde,تشنغده
+,Chengdu,تشنغدو
+,Chifeng, تشيفنغ
+,Chongqing,تشونغتشينغ
+,Dadukou,دادكو
+,Dalian,داليان
+,Dandong,داندونج
+,Datong,داتونغ
+,Dezhou,ديزهو
+,Dongguan,دونغوان
+,Fenghuang,فنغهوانغ
+,Foshan,فوشان
+,Fushun,فوشون
+,Fuxin,فوكسن
+,Fuzhou,فوزهو
+,Guangzhou,قوانغزهو
+,Guankou,جوانكو
+,Guilin,جويلين
+,Guiyang,جوييانغ
+,Guli,غولي
+,Haikou,هايكو
+,Handan,هاندان
+,Hangzhou,هانغتشو
+,Harbin,هاربين
+,Hefei,هفى
+,Hegang,هيجانج
+,Hengshui,هنغشوى
+,Hengyang,هينجيانج
+,Hohhot,هوهوت
+,Huai'an,هوايان
+,Huaibei,هوايبي
+,Huainan,هواينان
+,Huangshi,هوانغشي
+,Jiamusi,جياموسى
+,Jiangguanchi, جيانجوانشي
+,Jiangmen,جيانغمن
+,Jiaojiang, جياوجنغ
+,Jiaozuo,جياوزو
+,Jiaxing,جياشينغ
+,Jieyang,جييانغ
+,Jilin,جيلين
+,Jinan,جينان
+,Jincheng,جينتشنغ
+,Jingdezhen,جينغدتشن
+,Jining,جيننج
+,Jinzhou,جينتشو
+,Jixi,جيشي
+,Kaifeng,كايفنغ
+,Kunming,كونمينغ
+,Langfang,لانجفانج
+,Lanzhou,لانتشو
+,Lianshan,ليانشان
+,Liaoyang,لياويانغ
+,Liaoyuan,لياويوان
+,Lijiang,ليجيانغ
+,Luancheng, لونشينغ
+,Luohe,لوه
+,Luoyang,لويانغ
+,Luqiao, لوكيو
+,Mudanjiang,مودانجيانج
+,Nanchang,نانتشانغ
+,Nanchong,نانشونج
+,Nangandao,نانقانداو
+,Nanjing,​​نانجينغ
+,Nanning,ناننينغ
+,Nantong,نانتونغ
+,Neijiang,نيجيانج
+,Ningbo,نينغبو
+,Ordos,أوردوس
+,Panshan,بانشان
+,Pingdingshan,بينغدينغشان
+,Pingxiang,بينجشيانج
+,Putian,بوتيان
+,Puyang,بويانغ
+,Puyang Chengguanzhen, بويانج تشينقوانزين
+,Qingdao,تشينغداو
+,Qinhuangdao,تشينهوانغداو
+,Qiqihar,كيكيهار
+,Shanghai,شنغهاي
+,Shangrao,شانغراو
+,Shangyu,شانغيو
+,Shantou,شانتو
+,Shaoguan,شاوقوان
+,Shaoxing,شاوشينغ
+,Shashi,شاشي
+,Shengli,شينجلي
+,Shenyang,شنيانغ
+,Shenzhen,شنزهن
+,Shihezi,شيهزي
+,Shijiazhuang,شيجياتشوانغ
+,Shiqi,شيجي
+,Shiyan,شيان
+,Shuangyashan,شوانغيشان
+,Siping,سيبينغ
+,Suizhou,سويزهو
+,Suzhou,سوزهو
+,Tai’an,
+,Taihe, تايهي
+,Taiyuan,تاييوان
+,Taizhou,تايزهو
+,Tanggu,تانغقو
+,Tangshan,تانجشان
+,Tianjin,تيانجين
+,Tianshui,تيانشوي
+,Tieling, تايلينج
+,Tongshan,تونغشان
+,Ürümqi,
+,Weifang,ويفانغ
+,Wenshan City,مدينة ونشان
+,Wenzhou,ونزهو
+,Wuhan,ووهان
+,Wuhu,ووهو
+,Wusong,وسونغ
+,Wuwei,ووي
+,Wuxi,وشي
+,Xi’an,
+,Xiamen,شيامن
+,Xiangtan,شيانغتان
+,Xiangyang,شيانغيانغ
+,Xianyang,شيانيانغ
+,Xingtai,شينغتاى
+,Xining,شينينغ
+,Xinpu, سينبو
+,Xinyang,اكسينيانج
+,Yancheng,يانتشنغ
+,Yangjiang,يانغجيانغ
+,Yangquan,يانغكو
+,Yangshuo,يانغتشو
+,Yangzhou,يانغتشو
+,Yanji,يانجي
+,Yantai,يانتاي
+,Yichang,ييتشانغ
+,Yinchuan,ينتشوان
+,Yingkou,ينغكو
+,Yueyang,يوييانغ
+,Yunfu,يونفو
+,Zhangjiakou,تشانغجياكو
+,Zhangjiakou Shi Xuanhua Qu, شي شيوانهوا تشو
+,Zhangzhou,تشانغتشو
+,Zhanjiang,تشانجيانغ
+,Zhaoqing,تشاوتشينغ
+,Zhengzhou,تشنغتشو
+,Zhenjiang,تشنجيانغ
+,Zhongshan,تشونغشان
+,Zhoukou,زهوكو
+,Zhu Cheng City,مدينة تشو تشنغ
+,Zhuhai,تشوهاى
+,Zhumadian,زهوماديان
+,Zhuzhou,تشوتشو
+,Zibo,تسيبو
+,Zigong,تسيكونج
+,Zunyi,تسونيى
+,Armenia,أرمينيا
+,Barranquilla,بارانكويلا
+,Bello,بيلو
+,Bogotá,بوغوت أ
+,Bucaramanga,بوكارامانغا
+,Cali,كالي
+,Cartagena,قرطاجنة
+,Cúcuta,كوكوتا
+,Ibagué,إيباجي
+,Manizales,مانيزاليس
+,Medellín,ميديلين
+,Neiva,نيفا
+,Pasto,باستو
+,Pereira,بيريرا
+,Santa Marta,سانتا مارتا
+,Soacha,سواتشا
+,Soledad,سوليداد
+,Valledupar,فالدوبار
+,Villavicencio,فيلافيسينسيو
+,Moroni,موروني
+,San José,سان خوسيه
+,Zagreb,زغرب
+,Zagreb - Centar,زغرب - سينتار
+,Camagüey,كاماغواي
+,Havana,هافانا
+,Holguín,هولغوين
+,Santiago de Cuba,سانتياغو دي كوبا
+,Nicosia,نيقوسيا
+,Brno,برنو
+,Ostrava,أوسترافا
+,Prague,براغ
+,Kananga,كانانجا
+,Kinshasa,كينشاسا
+,Kisangani,كيسانغاني
+,Kolwezi,كلويزي
+,Likasi,ليكاسي
+,Lubumbashi,لوبومباشي
+,Masina,ماسينا
+,Mbuji-Mayi, مبوجيمايي
+,Copenhagen,كوبنهاغن
+,Djibouti,جيبوتي
+,Roseau,روسو
+,Santiago de los Caballeros, سانتياغو دي لوس كاباليروس
+,Santo Domingo,سانتو دومينغو
+,Santo Domingo Oeste, سانتو دومينغو أويستي
+,Dili,ديلي
+,Guayaquil,غواياكيل
+,Quito,كيتو
+,Al Fayyum,الفيوم
+,Al Jizah,الجيزة
+,Al Mahallah al Kubrá,المحلة الكبرى 
+,Al Manşurah,المنصورة
+,Alexandria,الإسكندرية
+,Asyut,أسيوط
+,Damietta,دمياط
+,Hurghada,الغردقة
+,Ismailia,الإسماعيلية
+,Tanta,طنطا
+,Cairo,القاهرة
+,Luxor,الأقصر
+,Port Said,بورسعيد
+,Suez,السويس
+,Tanda,تاندا
+,San Salvador,سان سلفادور
+,Soyapango, سويابانغو
+,Malabo,مالابو
+,Asmara,أسمرا
+,Tallinn,تالين
+,Addis Ababa,أديس أبابا
+,Suva,سوفا
+,Helsinki,هلسنكي
+,Lyon,ليون
+,Marseille,مرسيليا
+,Nice,نيس
+,Paris,باريس
+,Toulouse,تولوز
+,Libreville,ليبرفيل
+,Tbilisi,تبليسي
+,Berlin,برلين
+,Bielefeld,بيليفيلد
+,Bochum,بوخوم
+,Bochum-Hordel, بوخوم هوردل
+,Bonn,بون
+,Bremen,بريمن
+,Dortmund,دورتموند
+,Dresden,درسدن
+,Duisburg,دويسبورج
+,Düsseldorf,
+,Essen,إيسن
+,Frankfurt am Main, فرانكفورت
+,Hamburg,هامبورغ
+,Hannover,هانوفر
+,Köln,
+,Leipzig,لايبزيغ
+,Mannheim,مانهايم
+,Munich,ميونيخ
+,Nürnberg,
+,Stuttgart,شتوتغارت
+,Wandsbek, وانسبيك
+,Wuppertal,فوبرتال
+,Accra,أكرا
+,Kumasi,كوماسي
+,Tamale,تامالي
+,Athens,أثينا
+,Thessaloníki,تسالونيكي أ ك كي
+,Guatemala City,مدينة غواتيمالا
+,Mixco,ميكسكو
+,Villa Nueva,فيلا نويفا
+,Camayenne,كامايين
+,Conakry,كوناكري
+,Bissau,بيساو
+,Georgetown,جورج تاون
+,Carrefour,كارفور
+,Delmas 73, ديلماس
+,Port-au-Prince,بورت أو برنس
+,San Pedro Sula,سان بيدرو سولا
+,Tegucigalpa,تيغوسيغالبا
+,Hong Kong,هونغ كونغ
+,Kowloon,كولون
+,Budapest,بودابست
+,Reykjavik,ريكجافيك
+,Agra,أغرا
+,Ahmadnagar,أحمد نجر
+,Ahmedabad,أحمد أباد
+,Ajmer,أجمر
+,Akola,أكولا
+,Aligarh,أليجراه
+,Allahabad,ألاباد
+,Ambattur,أمباتور
+,Amravati,أمرافاتي
+,Amritsar,امريتسار
+,Asansol,اسانسول
+,Aurangabad,اورانجاباد
+,Barddhaman, بادهامان
+,Bareilly,باريلي
+,Belgaum,بلجاوم
+,Bellary,بيلاري
+,Bengaluru,بينجالورو
+,Bhagalpur,بهاجالبور
+,Bhatpara,بهاتبارا
+,Bhavnagar,بهافناغار
+,Bhayandar,بهياندار
+,Bhilai,بيلاي
+,Bhilwara,بهيلوارا
+,Bhiwandi, بيهواندي
+,Bhopal,بوبال
+,Bhubaneshwar,بهوبانيشوار
+,Bikaner,بيكانير
+,Bilimora, بيليمورا
+,Bokaro,بوكارو
+,Borivli, بورفيلي
+,Brahmapur,براهمابور
+,Chanda,شاندا
+,Chandigarh,شانديغار
+,Chennai,تشيناي
+,Cochin,كوشين
+,Coimbatore,كويمباتور
+,Cuttack, كوتاك
+,Dehra Dun,ديهرا دون
+,Delhi,دلهي
+,Dhulia,ذولية
+,Dombivli, ديمبفلي
+,Durgapur,دورجابور
+,Faridabad,فريداباد
+,Firozabad,فيروز آباد
+,Gaya,جايا
+,Ghaziabad, غازي آباد
+,Gorakhpur,جوراخبور
+,Gulbarga,جولبارغا
+,Guntur,جونتور
+,Gurgaon,جورجاون
+,Guwahati,جواهاتي
+,Gwalior,جواليور
+,Haora,هاورا
+,Hubli,هوبلي
+,Hyderabad,حيدر أباد
+,Indore,إندور
+,Jabalpur,جابالبور
+,Jaipur,جايبور
+,Jalandhar,جالندهار
+,Jalgaon,جالجاون
+,Jammu,جامو
+,Jamnagar,جامناجار
+,Jamshedpur,جامشيدبور
+,Jhansi,جانسي
+,Jodhpur,جودبور
+,Kalyan,كاليان
+,Kamarhati,كمرهاتي
+,Kanpur,كانبور
+,Karol Bagh,كارول باغ
+,Kolhapur,كولهابور
+,Kolkata,كلكتا
+,Kollam,كولام
+,Korba,الكوربة
+,Kota,كوتا
+,Kukatpalli, كوكاتابالي
+,Kulti,كولتي
+,Latur,لاتور
+,Lucknow,لكناو
+,Ludhiana,لوديانا
+,Madurai,مادوراي
+,Malegaon,ماليجاون
+,Mandu,ماندو
+,Tehran,طهران
+,Mangalore,مانغالور
+,Mathura,ماثورا
+,Meerut,ميروت
+,Mirat,ميرات
+,Moradabad,مراد آباد
+,Mumbai,مومباي
+,Muzaffarnagar, مظفرناجار
+,Muzaffarpur,مظفربور
+,Mysore,ميسور
+,Nagpur,ناجبور
+,Nanded,نانديد
+,Nangi,نانجي
+,Nashik,ناشيك
+,Navi Mumbai,نافي مومباي
+,Nellore,نيلور
+,New Delhi,نيودلهي
+,Nizamabad, نظام ىآباد
+,Nowrangapur, نورانجابور
+,Panihati,بانياتي
+,Patiala,باتيالا
+,Patna,باتنا
+,Pimpri,بيمبري
+,Punasa,بوناسا
+,Pune,بيون
+,Raipur,رايبور
+,Rajahmundry, راجاهامنودري
+,Rajkot,راجكوت
+,Ramgundam,رامجوندام
+,Ranchi,رانتشي
+,Rohtak,رهجتك
+,Rourkela,روركلا
+,Saharanpur,ساهارانبور
+,Salem,سالم
+,Sangli,سانجلي
+,Shahjanpur,شاهجانبور
+,Shiliguri,شيليجوري
+,Shimoga,شيموجا
+,Shivaji Nagar,شيفاجي ناجار
+,Shyamnagar,شيامناجار
+,Solapur, سولابور
+,Srinagar,سريناجار
+,Surat,سورة
+,Teni,تيني
+,Thane,ثين
+,Thiruvananthapuram,ثيروفانانثابورام
+,Tiruchirappalli,تيروتشيرابالي
+,Tirunelveli, تيرونليفلي
+,Tiruppur, فريبور
+,Trichur, تريشور
+,Tumkur, تومكور
+,Udaipur,أودايبور
+,Ujjain,اوججين
+,Ulhasnagar, اولهاسنجار
+,Vadodara,فادودارا
+,Varanasi,فاراناسي
+,Vijayawada,فيجاياوادا
+,Visakhapatnam,فيساخاباتنام
+,Warangal,وارانجال
+,Ambon,امبون
+,Balikpapan,باليكبابان
+,Bandar Lampung,بندر لامبونج
+,Bandung,باندونج
+,Banjarmasin,بانجارماسين
+,Bekasi,بيكاسي
+,Bengkulu,بنجكولو
+,Bogor,بوجور
+,Cimahi,سيمي
+,City of Balikpapan,مدينة باليكبابان
+,Denpasar,دينباسار
+,Depok,ديبوك
+,Jakarta,جاكرتا
+,Jambi City,مدينة جامبي
+,Makassar,ماكاسار
+,Malang,مالانج
+,Manado,مانادو
+,Mataram,ماتارام
+,Medan,ميدان
+,Padang,بادانج
+,Palembang,باليمبانج
+,Pekanbaru,بيكانبارو
+,Percut, بيركوت
+,Pontianak,بونتياناك
+,Samarinda,ساماريندا
+,Semarang,سيمارانج
+,Situbondo, سيتوبوندو
+,South Tangerang,جنوب تانجيرانج
+,Surabaya,سورابايا
+,Surakarta,سوراكارتا
+,Tangerang,تانجيرانج
+,Yogyakarta,يوجياكارتا
+,Abadan,عبدان
+,Ahvaz,أهواز
+,Arak,أراك
+,Ardabil,أردبيل
+,Azadshahr,ازادشهر
+,Bandar Abbas,بندر عباس
+,Hamadan,همدان
+,Isfahan,إصفهان
+,Kahriz,قهرز
+,Karaj,كراج
+,Kerman,كرمان
+,Kermanshah,كرمانشاه
+,Khorramabad,خورام أباد
+,Khorramshahr,خورامشهر
+,Mashhad,مشهد
+,Orumiyeh,أورومية
+,Pasragad Branch,فرع باسراجاد
+,Qazvin,قزوين
+,Qom,قم
+,Rasht,رشت
+,Sanandaj,سنندج
+,Shiraz,شيراز
+,Tabriz,تبريز
+,Yazd,يزد
+,Zahedan,زاهدان
+,Zanjan,زنجان
+,Abu Ghurayb,أبو غريب
+,Ad Diwaniyah,الديوانية
+,Al Amarah,العمارة
+,Al Başrah al Qadimah,البصرة القديمة
+,Al Kut,الكوت
+,Al Mawşil al Jadidah,الماو إله الجديدة
+,An Naşiriyah,نا نا إرية
+,As Sulaymaniyah,السليمانية
+,Baghdad,بغداد
+,Basrah,البصرة
+,Erbil,أربيل
+,Karbala,كربلاء
+,Kirkuk,كركوك
+,Mosul,الموصل
+,Najaf,النجف
+,Dublin,دبلن
+,Bologna,بولونيا
+,Florence,فلورنسا
+,Genoa,جنوة
+,Milano,ميلانو
+,Napoli,نابولي
+,Palermo,باليرمو
+,Rome,روما
+,Turin,تورينو
+,Abidjan,أبيدجان
+,Abobo,أبوبو
+,Bouaké,بواكيه
+,Kingston,كينغستون
+,New Kingston,نيو كينغستون 
+,Akita,أكيتا
+,Akitashi,أكيتاشي
+,Amagasaki,أماجاساكي
+,Asahikawa,أساهيكاوا
+,Chiba,تشيبا
+,Fujisawa,فوجيساوا
+,Fukuoka,فوكوكا
+,Fukuyama,فوكوياما
+,Gifu-shi,جيفو شي
+,Hachioji,هاتشيوجى
+,Hamamatsu,هاماماتسو
+,Himeji,هيميجي
+,Hirakata,هيراكاتا
+,Hiroshima,هيروشيما
+,Honcho, هونشو
+,Iwaki,إيواكي
+,Kagoshima,كاجوشيما
+,Kanazawa,كانازاوا
+,Kashiwa,كاشيوا
+,Kawagoe,كاواغوي
+,Kawaguchi,كاواغوتشي
+,Kawasaki,كاواساكي
+,Kitakyushu,كيتاكيوشو
+,Kobe,كوبي
+,Kochi,كوتشي
+,Koriyama,كورياما
+,Koshigaya,كوشيجايا
+,Kumamoto,كوماموتو
+,Kurashiki,كوراشيكي
+,Kyoto,كيوتو
+,Machida,ماشيدا
+,Matsudo,ماتسودو
+,Matsuyama,ماتسوياما
+,Minato,ميناتو
+,Miyazaki,ميازاكي
+,Nagano,ناغانو
+,Nagasaki,ناغازاكي
+,Nagoya,ناجويا
+,Naha,ناها
+,Nara-shi,نارا شي
+,Niigata,نيجاتا
+,Nishinomiya-hama, نيشينوميا-هما
+,Oita,أويتا
+,Okayama,أوكاياما
+,Okazaki,أوكازاكي
+,Osaka,أوساكا
+,Saitama,سايتاما
+,Sakai,ساكاي
+,Sapporo,سابورو
+,Sendai,سنداي
+,Shizuoka,شيزوكا
+,Suita,سويتا
+,Takamatsu,تاكاماتسو
+,Takatsuki,تاكاتسوكي
+,Tokorozawa,توكوروزاوا
+,Tokyo,طوكيو
+,Toyama,توياما
+,Toyohashi,تويوهاشي
+,Toyonaka,تويوناكا
+,Toyota,تويوتا
+,Utsunomiya,أوتسونوميا
+,Wakayama,واكاياما
+,Yokohama,يوكوهاما
+,Yokosuka,يوكوسوكا
+,Yono,يونو
+,Ajloun,عجلون
+,Amman,عمان
+,Aqaba,العقبة
+,Balqa,البلقاء
+,Irbid,إربد
+,Jerash,جرش
+,Karak,الكرك
+,Maan,معان
+,Madaba,مأدبا
+,Mafraq,المفرق
+,Tafila,الطفيلة
+,Zarqa,الزرقاء
+,Almaty,ألماتي
+,Astana,أستانا
+,Karagandy,كاراجاندي
+,Kyzyl-Orda,كيزيل-أوردا
+,Pavlodar,بافلودار
+,Shymkent,شيمكنت
+,Taraz,تاراز
+,Ust-Kamenogorsk, أوست - كامنجوسورك
+,Mombasa,مومباسا
+,Nairobi,نيروبي
+,Pristina,بريشتينا
+,Al Ahmadi,الأحمدي
+,Al Farwaniyah,الفروانية
+,Al Fahaheel,الفحيحيل
+,Al Jahra,الجهراء
+,Al Kuwait,الكويت
+,Al Salmiyah,السالمية
+,Hawalli,حولي
+,Sabah Al Salem,صباح السالم
+,Bishkek,بشكيك
+,Vientiane,فينتيان
+,Riga,ريغا
+,Beirut,بيروت
+,Bekaa,البقاع
+,Jounieh,جونية
+,Saidon,صيدا
+,Tripoli,طرابلس
+,Monrovia,مونروفيا
+,Bayda,بايدا
+,Benghazi,بنغازي
+,Mişratah,
+,Tripoli,طرابلس الغرب
+,Zawiya,الزاوية
+,Kaunas,كاوناس
+,Vilnius,فيلنيوس
+,Luxembourg City,لوكسمبورغ سيتي
+,Macau,ماكاو
+,Skopje,سكوبي
+,Antananarivo,أنتاناناريفو
+,Blantyre,بلانتير
+,Lilongwe,ليلونجوي
+,George Town,جورج تاون
+,Ipoh,إيبوه
+,Johor Bahru,جوهور باهرو
+,Kampung Baru Subang,كامبونج بارو سوبانج
+,Klang,كلانج
+,Kota Bharu,كوتا بهارو
+,Kota Kinabalu,كوتا كينابالو
+,Kuala Lumpur,كوالا لمبور
+,Kuantan,كوانتان
+,Kuching,كوتشينغ
+,Petaling Jaya,بيتالينغ جايا
+,Sandakan,سانداكان
+,Seremban,سيريمبان
+,Shah Alam,شاه علم
+,Subang Jaya,سوبانج جايا
+,Tawau,تاواو
+,Malé,مالى
+,Bamako,باماكو
+,Valletta,فاليتا
+,Majuro,ماجورو
+,Nouakchott,نواكشوط
+,Port Louis,بورت لويس
+,Acapulco de Juárez,أكابولكو دي جو أ رز
+,Aguascalientes,أغواسكاليينتس
+,Álvaro Obregón,ألفارو أوبريجون
+,Apodaca,  أبوداكا
+,Azcapotzalco, آزكابوتوزالكو
+,Benito Juarez,بينيتو خواريز
+,Cancún,كانكون
+,Celaya,سيلايا
+,Chihuahua,تشيهواهوا
+,Ciudad Juárez,سيوداد خواريز
+,Ciudad López Mateos,سيوداد لوبيز ماتيوس
+,Ciudad Nezahualcoyotl,سيوداد نيزاهوالكوتول
+,Coacalco,كواكالكو
+,Coyoacán,كايوويكان
+,Cuauhtémoc,كواتيموك
+,Cuautitlán Izcalli,كواتيتلان إيزكالي
+,Cuernavaca,كويرنافاكا
+,Culiacán,كولياكان
+,Ecatepec, إيكاتيبيك
+,General Escobedo,عام اسكوبيدو
+,Guadalajara,غوادالاخارا
+,Guadalupe,جوادالوبي
+,Gustavo A. Madero, غوستافو أ. ماديرو
+,Hermosillo,هيرموسيلو
+,Heroica Matamoros, هيوريكا ماتاموروس
+,Irapuato, إيرابوتو
+,Ixtapaluca, إكستابالوكا
+,Iztacalco, إيزتابولكا
+,Iztapalapa,إيزتابالابا
+,León,ليون
+,Mazatlán,مازاتلان
+,Mérida,ميريدا
+,Mexicali,مكسيكالي
+,Mexico City,مكسيكو سيتي
+,Miguel Hidalgo,ميغيل هيدالغو
+,Monterrey,مونتيري
+,Morelia,موريليا
+,Naucalpan de Juárez,ناوكالبان دي خواريز
+,Nuevo Laredo,نويفو لاريدو
+,Pachuca de Soto,باتشوكا دي سوتو
+,Puebla,بويبلا
+,Reynosa,رينوسا
+,Saltillo,سالتيلو
+,San Luis Potosí,سان لويس بوتوس 
+,San Miguel Xico Viejo, سان ميغيل إكسيكو فيجو
+,San Nicolás de los Garza,سان نيكول أ س دي لوس غارزا
+,Santa María Chimalhuacán,سانتا ماريا تشيمالهواكان
+,Santiago de Querétaro,سانتياغو دي كويريتارو
+,Tampico,تامبيكو
+,Tijuana,تيجوانا
+,Tlahuac,تالاواك
+,Tlalnepantla,تلانيبانتلا
+,Tlalpan,تلالبان
+,Tlaquepaque, تلاكويباكوي
+,Toluca,تولوكا
+,Tonalá,
+,Torreon,توريون
+,Tuxtla Gutiérrez,
+,Venustiano Carranza, فينوستيانو كارانزا
+,Veracruz,فيراكروز
+,Victoria de Durango,فيكتوريا دي دورانجو
+,Villahermosa,فيلاهيرموسا
+,Xalapa de Enríquez,خالابا دي إنريكيز
+,Xochimilco, زوتشيميلكو
+,Zapopan,زابوبان
+,Chişinau,تشي إينو
+,Monaco,موناكو
+,Ulan Bator,أولان باتور
+,Podgorica,بودغوريتشا
+,Agadir,أغادير
+,Al Hoceïma,الحسيمة
+,Berrechid,برشيد
+,Casablanca,الدار البيضاء
+,Dakhla and South,الداخلة والجنوب
+,El Jadida,الجديدة
+,Fes,فاس
+,Kenitra,القنيطرة
+,Marrakesh,مراكش
+,Meknès,مطناس 
+,Mohammedia,محمدية
+,Nador,الناظور
+,Oujda,وجدة
+,Rabat,الرباط
+,Sale,ساله
+,Tangier,طنجة
+,Tétouan,تطوان
+,Beira,بيرا
+,Maputo,مابوتو
+,Matola,ماتولا
+,Nampula,نامبولا
+,Mandalay,ماندالاي
+,Mawlamyine,مولاميين
+,Nay Pyi Taw, ناي بيي تاو
+,Yangon,يانغون
+,Windhoek,ويندهوك
+,Kathmandu,كاتماندو
+,Amsterdam,أمستردام
+,Rotterdam,روتردام
+,The Hague,لاهاي
+,Auckland,أوكلاند
+,Christchurch,كريستشرش
+,Manukau City,مدينة مانوكا
+,Wellington,ولينغتون
+,Managua,ماناغوا
+,Niamey,نيامي
+,Aba,آبا
+,Abeokuta,أبيوكوتا
+,Abuja,أبوجا
+,Ado-Ekiti, آدو إيكيتي
+,Akure,آكيور
+,Bauchi,بوتشي
+,Benin City,مدينة بنين
+,Calabar,كالابار
+,Ebute Ikorodu, إيبوت إيكورودو
+,Enugu,إنوجو
+,Ibadan,إيبادان
+,Ikeja,إيكيا
+,Ilorin,ايلورين
+,Jos,جوس
+,Kaduna,كادونا
+,Kano,كانو
+,Katsina,كاتسينا
+,Lagos,لاجوس
+,Maiduguri,مايدوجوري
+,Okene,أوكيني
+,Onitsha,اونيتشا
+,Oyo,أويو
+,Port Harcourt,بورت هاركورت
+,Sokoto,سوكوتو
+,Uyo, أويو
+,Warri,واري
+,Zaria,زاريا
+,Chongjin,تشونغ جين
+,Hamhung,هامهونج
+,Hungnam,هونغنام
+,Kaesong,كايسونج
+,Namp’o,نامبو
+,Pyongyang,بيونغ يانغ
+,Sariwon,ساريون
+,Wonsan,وونسان
+,Oslo,أوسلو
+,Ibri,عبري
+,Khasab,خصب
+,Muscat,مسقط
+,Nizwa,نزوى
+,Salalah,صلالة
+,Sohar,صحار
+,Sur,سور
+,Zufar,ظفر
+,Bahawalpur,باهاوالبور
+,Bhimbar,بيمبار
+,Faisalabad,فيصل آباد
+,Gujranwala,جوجرانوالا
+,Gujrat,جوجرات
+,Hyderabad,حيدر آباد
+,Islamabad,إسلام آباد
+,Jhang Sadr,جانغ صدر
+,Karachi,كراتشي
+,Kotli,كوتلي
+,Lahore,لاهور
+,Larkana,لاركانا
+,Malir Cantonment,مالير كانتونمينت
+,Mardan,مردان
+,Multan,ملتان
+,Muzaffarabad,مظفر آباد
+,Peshawar,بيشاور
+,Quetta,كويتا
+,Rawalpindi,روالبندي
+,Sargodha,سرغودا
+,Sheikhupura,الشيخوبورا
+,Sialkot,سيالكوت
+,Sukkur,شكور
+,Bethlehem,بيت لحم
+,Deir Al Balah,دير البلح
+,East Jerusalem,القدس الشرقية
+,Gaza,غزة
+,Hebron,الخليل
+,Jenin,جنين
+,Jericho,أريحا
+,Jerusalem,القدس
+,Khan Younis,خان يونس
+,Nablus,نابلس
+,Occupied 1948,أراضي المحتلة
+,Qalqilyah,قلقيلية
+,Rafah,رفح
+,Ramallah and Al Bireh,رام الله والبيرة
+,Salfit,سلفيت
+,Tubas,طوباس
+,Tulkarem,طولكرم
+,West Bank,الضفة الغربية
+,Panamá,باناما
+,San Miguelito,سان ميغيليتو
+,Port Moresby,ميناء مورسبي
+,Asunción,اسونسيون
+,Ciudad del Este,سيوداد ديل إيست
+,Arequipa,أريكويبا
+,Callao,كالاو
+,Chiclayo,تشيكلايو
+,Chimbote,تشيمبوت
+,Cusco,كوسكو
+,Huancayo,هوانكايو
+,Iquitos,إكيتوس
+,Lima,ليما
+,Piura,بيورا
+,Pucallpa,بوكالبا
+,Trujillo,تروجيلو
+,Antipolo,أنتيبولو
+,Bacolod City,مدينة باكولود
+,Bacoor,باكور
+,Budta,بودتا
+,Butuan,بوتوان
+,Cagayan de Oro,كاجايان دي أورو
+,Calamba,كالامبا
+,Cebu City,مدينة سيبو
+,Dasmariñas,مدينة دسماريناس
+,Davao,دافاو
+,General Santos,جنرال سانتوس
+,Iligan City, مدينة إليجان 
+,Iloilo,إيلويلو
+,Lapu-Lapu City,مدينة لابو لابو
+,Makati City,مدينة ماكاتى
+,Malingao,مالينغاو
+,Mandaluyong City,ماندالويونغ سيتي
+,Mandaue City,مدينة مانداو
+,Manila,مانيلا
+,Mansilingan, مانسالينجان
+,Pasig City,باسيج سيتي
+,Quezon City,كويزون سيتي
+,San Jose del Monte,سان خوسيه ديل مونتي
+,Taguig,تاغيج
+,Zamboanga,زامبوانجا
+,Bydgoszcz,بيدجوز
+,Gdansk,غدانسك
+,Katowice,كاتوفيتشي
+,Kraków,كراكوف
+,Lódz,لودز
+,Lublin,لوبلان
+,Poznan,بوزنان
+,Szczecin, شتشيتسين
+,Warsaw,وارسو
+,Wroclaw,فروتسواف
+,Lisbon,لشبونة
+,San Juan,سان خوان
+,Doha,الدوحة
+,Brazzaville,برازافيل
+,Pointe-Noire,بوانت نوار
+,Bucharest,بوخارست
+,Cluj-Napoca,كلوج نابوكا
+,Constanta,كونستانتا
+,Craiova,كرايوفا
+,Iaşi,مدينة ياشى
+,Timişoara,مدينة تيميشوارا
+,Arkhangel’sk,مدينة ارخانجيلسك
+,Astrakhan,أستراخان
+,Barnaul,بارناول
+,Belgorod,بيلغورود
+,Bryansk,بريانسك
+,Cheboksary,تشيبوكساري
+,Chelyabinsk,تشيليابينسك
+,Cherepovets,تشيريبوفيتس
+,Chita,تشيتا
+,Irkutsk,إيركوتسك
+,Ivanovo,إيفانوفو
+,Izhevsk,إيجيفسك
+,Kaliningrad,كالينينغراد
+,Kalininskiy,كالينينسكي
+,Kaluga,كالوغا
+,Kazan,كازان
+,Kemerovo,كيميروفو
+,Khabarovsk,خاباروفسك
+,Khabarovsk Vtoroy,خاباروفسك فيتوروي
+,Kirov,كيروف
+,Krasnodar,كراسنودار
+,Krasnogvargeisky, كاسنوجفاريجسكي
+,Krasnoyarsk,كراسنويارسك
+,Kurgan,كورغان
+,Kursk,كورسك
+,Lipetsk,ليبيتسك
+,Magnitogorsk,مانايتاغورسك
+,Makhachkala,ماخاشكالا
+,Moscow,موسكو
+,Murmansk,مورمانسك
+,Naberezhnyye Chelny, نابريجناي تشلني
+,Nizhniy Novgorod,نيزني نوفغورود
+,Nizhniy Tagil,نيجني تاجيل
+,Novokuznetsk,نوفوكوزنيتسك
+,Novosibirsk,نوفوسيبيرسك
+,Omsk,أومسك
+,Orël,
+,Orenburg,أورنبرج
+,Penza,بينزا
+,Perm,بيرم
+,Rostov-na-Donu,روستوف نا دونو
+,Ryazan’,
+,Saint Petersburg,سانت بطرسبرغ
+,Samara,سمارة
+,Saransk,سارانسك
+,Saratov,ساراتوف
+,Smolensk,سمولينسك
+,Sochi,سوتشي
+,Stavropol’,مدينة ستافروبول
+,Surgut,سورجوت
+,Tol’yatti,تولاتي
+,Tomsk,تومسك
+,Tula,تولا
+,Tver,تفير
+,Tyumen,تيومين
+,Ufa,أوفا
+,Ulan-Ude,أولان أودي
+,Ulyanovsk,أوليانوفسك
+,Vladikavkaz,فلاديكافكاز
+,Vladimir,فلاديمير
+,Vladivostok,فلاديفوستوك
+,Volgograd,فولغوغراد
+,Vologda,فولوغدا
+,Volzhskiy, فولسكي
+,Voronezh,فورونيج
+,Yaroslavl,ياروسلافل
+,Yekaterinburg,ايكاترينبرج
+,Kigali,كيغالي
+,Basseterre,باسيتير
+,Castries,كاستريس
+,Kingstown,كينغستاون
+,Apia,آبيا
+,San Marino,سان مارينو
+,Abha,أبها
+,Al Kharj,الخرج
+,Aseer,عسير
+,Buraidah,بريدة
+,Dammam,الدمام
+,Hafar Al-Batin,حفر الباطن
+,Hai'l,حايل
+,Hofuf,الهفوف
+,Jeddah,جدة
+,Jizan,جيزان
+,Jubail,الجبيل
+,Khamis Mushait,خميس مشيط
+,Khobar,الخبر
+,Mecca,مكة
+,Medina,المدينة المنورة
+,Najran,نجران
+,Qatif,القطيف
+,Riyadh,الرياض
+,Tabuk,تبوك
+,Ta'if,الطائف
+,Yanbu,ينبع
+,Dakar,داكار
+,Pikine,بيكين
+,Touba,توبا
+,Belgrade,بلغراد
+,Victoria,فيكتوريا
+,Freetown,فريتاون
+,Singapore,سنغافورة
+,Bratislava,براتيسلافا
+,Ljubljana,ليوبليانا
+,Hargeysa,هرجيسا
+,Mogadishu,مقديشو
+,Benoni,بنوني
+,Bloemfontein,بلومفونتين
+,Boksburg,بوكسبورج
+,Botshabelo,بوتشابلو
+,Brakpan,براكبان
+,Cape Town,كيب تاون
+,Diepsloot, ديبسلوت
+,Durban,ديربان
+,East London,شرق لندن
+,Johannesburg,جوهانسبرغ
+,Krugersdorp,كروغرسدورب
+,Newcastle,نيوكاسل
+,Pietermaritzburg,بيترماريتزبيرغ
+,Port Elizabeth,بورت إليزابيث
+,Pretoria,بريتوريا
+,Soweto,سويتو
+,Tembisa,تمبيسا
+,Vereeniging, فيرنيجنج
+,Welkom,ويلكوم
+,Ansan-si,أنسان سي
+,Anyang-si, أنيانج سي
+,Bucheon-si,بوتشون سي
+,Busan,بوسان
+,Changwon,تشانغوون
+,Cheonan,تشيونان
+,Cheongju-si, تشيونغ سي
+,Chinju,شينجو
+,Daegu,دايجو
+,Daejeon,دايجون
+,Goyang-si,جويانج سي
+,Gwangju,جوانج جو
+,Hwaseong-si,هواسونج-سي
+,Incheon,إنتشون
+,Jeju City,مدينة جيجو
+,Jeonju,جيونجو
+,Kimhae, كيمهاى
+,Kwangmyong,كوانغميونج
+,Pohang,بوهانج
+,Seongnam-si,سيونغنام سي
+,Seoul,سيئول
+,Suwon-si,سوون-سي
+,Uijeongbu-si, أويجيونغبو سي
+,Ulsan,أولسان
+,Juba,جوبا
+,Alicante,اليكانتي
+,Barcelona,برشلونة
+,Bilbao,بلباو
+,Córdoba,م أ ردا
+,Las Palmas de Gran Canaria, لاس بالماس دي جران كناريا
+,Madrid,مدريد
+,Málaga,ملغا
+,Murcia,مورسيا
+,Palma,بالما
+,Sevilla,إشبيلية
+,Valencia,فالنسيا
+,Valladolid,بلد الوليد
+,Zaragoza,سرقسطة
+,Ampara, أمبارا
+,Anuradhapura,أنورادهابورا
+,Avissawella, آفياسويلا
+,Badulla,بادولا
+,Balangoda,بالانجودا
+,Bandarawela,باندارويلا
+,Batticaloa,باتيكالوا
+,Beruwala,بيروالا
+,Chilaw, شيلاو
+,Colombo,كولومبو
+,Dambulla,دامبولا
+,Dehiwala-Mount Lavinia,داهوالا ماونت لافينيا
+,Eravur, إيرافور
+,Galle,جالي
+,Gampaha,جامباها
+,Gampola,جامبولا
+,Hambantota,هامبانتوتا
+,Hatton,هاتون
+,Horana,حورانا
+,JaEla,جيلا
+,Jaffna,جافنا
+,Kalmunai,كالموناي
+,Kalutara,كالوتارا
+,Kandy,كاندي
+,Katunayake,كاتوناياكى
+,Kegalle,كيغالي
+,Kelaniya,الكيلانية
+,Kolonnawa,كولوناوا
+,Kurunegala,كورونيجالا
+,Mannar,منار
+,Matara,ماتارا
+,Minuwangoda,مينووانغودا
+,Moneragala, مونيراغالا
+,Moratuwa,موراتوا
+,Negombo,نيجومبو
+,Nuwara Eliya,نوارا إليا
+,Panadura,بانادورا
+,Peliyagoda,بيلياجودا
+,Puttalam,بوتالام
+,Ratnapura,راتنابورا
+,Tangalle,تانجالي
+,Trincomalee,ترينكومالي
+,Vavuniya,فافونيا
+,Wattala,واتالا
+,Weligama,فيليغاما
+,Kassala,كسلا
+,Khartoum,الخرطوم
+,Khartoum Bahri,الخرطوم بحري
+,Kosti,كوستي
+,Nyala,نيالا
+,Omdurman,أم درمان
+,Port Sudan,بورتسودان
+,Qadarif,القضارف
+,Ubayyid,عبيد
+,Wad Medani,واد مدني
+,Paramaribo,باراماريبو
+,Lobamba,لوبامبا
+,Mbabane,مبابان
+,Göteborg,غوتبورغ
+,Malmö,مالمو
+,Stockholm,ستوكهولم
+,Basel,بازل
+,Beil/Bienne,بيل / بيين
+,Bern,برن
+,Geneva,جنيف
+,Lausanne,لوزان
+,Lucerne,لوسرن
+,Lugano,لوغانو
+,St. Gallen,سانت غالن
+,Winterthur,فينترتور
+,Zurich,زيوريخ
+,Aleppo,حلب
+,Damascus,دمشق
+,Hamah,حماة
+,Homs,حمص
+,Latakia,اللاذقية
+,Banqiao, بانجو
+,Hsinchu,هسينشو
+,Hualien City,مدينة هوالين
+,Kaohsiung,كاوشيونغ
+,Keelung,كيلونج
+,Taichung,تايتشونغ
+,Tainan,تاينان
+,Taipei,تايبيه
+,Taoyuan City,مدينة تاويوان
+,Dushanbe,دوشانبي
+,Arusha,أروشا
+,Dar es Salaam,دار السلام
+,Mwanza,موانزا
+,Zanzibar,زنجبار
+,Bangkok,بانكوك
+,Samut Prakan,ساموت براكان
+,Lomé,لومي
+,Nukuʻalofa,نوكوألوفا
+,Port of Spain,بورت أوف سبين
+,Tunis,تونس
+,Bizerte,بنزرت
+,Gabes,قابس
+,Hammamet,الحمامات
+,Kairouan,القيروان
+,Sfax,صفاقس
+,Sousse,سوسة
+,Adana,أضنة
+,Adapazari,أدابازاري
+,Ankara,أنقرة
+,Antalya,أنطاليا
+,Ataşehir,
+,Bağcılar,
+,Bahçelievler,
+,Batikent,باتيكينت
+,Batman,باتمان
+,Bursa,بورصة
+,Çankaya,
+,Denizli,دنيزلي
+,Diyarbakır,
+,Elazig,إيلازيج
+,Erzurum,إرزروم
+,Esenler, إيسنلر
+,Esenyurt,إسنيورت
+,Eskişehir,
+,Gaziantep,غازي عنتاب
+,İstanbul,إسطنبول
+,İzmir,إزمير
+,Kahramanmaraş,
+,Karabağlar,
+,Kayseri,قيساري
+,Konya,قونية
+,Malatya,ملاطية
+,Maltepe,مالتيب
+,Manisa,مانيسا
+,Mercin, ميرسن
+,Muratpaşa,
+,Samsun,سامسون
+,Şanlıurfa,
+,Şişli,
+,Sultangazi,سلطان غازى
+,Sultanbeyli,سلطان بيلي
+,Umraniye,عمرانية
+,Urfa, أورفا
+,Üsküdar,
+,Van,فان
+,Ashgabat,عشق أباد
+,Funafuti,فونافوتي
+,Kampala,كمبالا
+,Chernihiv,تشرنيهيف
+,Dnipropetrovsk,دنيبروبتروفسك
+,Donetsk,دونيتسك
+,Kharkiv,خاركيف
+,Kherson,خيرسون
+,Khmel’nyts’kyy,
+,Kiev,كييف
+,Kryvyi Rih,كريفي ريه
+,Luhansk,لوهانسك
+,Lviv,لفيف
+,Makiyivka, ميكييفيكا
+,Mariupol,ماريوبول
+,Mykolayiv,ميكولاييف
+,Odessa,أوديسا
+,Poltava,بولتافا
+,Sevastopol,سيفاستوبول
+,Simferopol,سيمفيروبول
+,Vinnytsya,فينيتسيا
+,Zaporizhzhya, زابورزيا
+,Abu Dhabi,أبو ظبي
+,Ajman,عجمان
+,Al Ain,العين
+,Dubai,دبي
+,Fujairah,الفجيرة
+,Ras Al Khaimah,رأس الخيمة
+,Sharjah,الشارقة
+,Umm Al Qaiwain,أم القيوين
+,Aberdeen,أبردين
+,Belfast,بلفاست
+,Birmingham,برمنغهام
+,Bristol,بريستول
+,Cardiff,كارديف
+,Coventry,كوفنتري
+,Edinburgh,إدنبره
+,Glasgow,غلاسكو
+,Hull,هال
+,Islington, إزلينغتون
+,Leeds,ليدز
+,Leicester,ليستر
+,Liverpool,ليفربول
+,London,لندن
+,Manchester,مانشستر
+,Sheffield,شيفيلد
+,Albuquerque,البوكيرك
+,Anaheim,أنهايم
+,Arlington,أرلينغتون
+,Atlanta,أتلانتا
+,Aurora,أورورا
+,Austin,أوستن
+,Bakersfield,بيكرسفيلد
+,Baltimore,بالتيمور
+,Borough of Queens,بورو أوف كوينز
+,Boston,بوسطن
+,Brooklyn,بروكلين
+,Charlotte,شارلوت
+,Chicago,شيكاغو
+,Cleveland,كليفلاند
+,Colorado Springs,كولورادو سبرينغز
+,Columbus,كولومبوس
+,Corpus Christi,كوربوس كريستي
+,Dallas,دالاس
+,Denver,دنفر
+,Detroit,ديترويت
+,El Paso,إل باسو
+,Fort Worth,فورت وورث
+,Fresno,فريسنو
+,Honolulu,هونولولو
+,Houston,هيوستن
+,Indianapolis,إنديانابوليس
+,Jacksonville,جاكسونفيل
+,Kansas City,كانساس سيتي
+,Las Vegas,لاس فيجاس
+,Long Beach,لونج بيتش
+,Los Angeles,لوس أنجلوس
+,Manhattan,مانهاتن
+,Memphis,ممفيس
+,Mesa,ميسا
+,Miami,ميامي
+,Milwaukee,ميلووكي
+,Minneapolis,مينيابوليس
+,Nashville,ناشفيل
+,New Orleans,نيو أورلينز
+,New South Memphis,نيو ساوث ممفيس
+,New York City,مدينة نيويورك
+,Oakland,أوكلاند
+,Oklahoma City,أوكلاهوما سيتي
+,Omaha,أوماها
+,Philadelphia,فيلادلفيا
+,Phoenix,فينكس
+,Pittsburgh,بيتسبرغ
+,Portland,بورتلاند
+,Raleigh,رالي
+,Riverside,ريفرسايد
+,Sacramento,سكرامنتو
+,San Antonio,سان انطونيو
+,San Diego,سان دييغو
+,San Francisco,سان فرانسيسكو
+,San Jose,سان خوسيه
+,Santa Ana,سانتا آنا
+,Seattle,سياتل
+,South Boston,جنوب بوسطن
+,St. Louis,سانت لويس
+,Staten Island,جزيرة ستاتين
+,Tampa,تامبا
+,The Bronx,ذا برونكس
+,Tucson,توكسون
+,Tulsa,تولسا
+,Virginia Beach,فيرجينيا بيتش
+,"Washington, D.C.",واشنطن العاصمة
+,West Raleigh, غرب رالي
+,Wichita,ويتشيتا
+,Montevideo,مونتيفيديو
+,Andijon,أنديجون
+,Namangan, نامانجان
+,Samarqand,سمرقند
+,Tashkent,طشقند
+,Barcelona,برشلونة
+,Barinas,باريناس
+,Barquisimeto, باركيسيميتو
+,Caracas,كاراكاس
+,Ciudad Bolívar,
+,Ciudad Guayana,سيوداد غوايانا
+,Maracaibo,ماراكايبو
+,Maracay,ماراكاي
+,Maturín,
+,Mérida,
+,Petare, بيتاري
+,Puerto La Cruz, بويرتو لا كروز
+,Turmero, تورميرو
+,Valencia,فالنسيا
+,Biên Hòa,
+,Da Nang,دا نانج
+,Haiphong,هايفونغ
+,Hanoi,هانوي
+,Ho Chi Minh City,مدينة هوشي منه
+,Laayoune,العيون
+,Aden,عدن
+,Al Hudaydah,الحديدة
+,Al Mukalla,المكلا
+,Dhamar,ذمار
+,Hodeidah,الحديدة
+,Ibb,إب
+,Sanaa,صنعاء
+,Ta‘izz,
+,Kitwe,كيتوي
+,Lusaka,لوساكا
+,Ndola,ندولا
+,Bulawayo,بولاوايو
+,Chitungwiza, تشيتونجويزا
+,Harare,هراري
+,Kerala,ولاية كيرالا
+,Suva Reka,سوفا ريكا
+,Prizren,بريزرن
+,Orahovac,أوراهوفاتش
+,Ferizaj,فيريزاج
+,Mališevo,مالي إفيو
+,Peć,
+,Lipljan,ليبليان
+,Gjakova, غياكوفا
+,Skenderaj, سكندراي
+,Podujevo, بودوييفو
+,Vitina,فيتينا
+,Mitrovica,ميتروفيتشا
+,Deçan,
+,Gjilan,جيلان
+,Istok,استوك
+,Vučitrn,
+,Klina,كلينا
+,Glogovac, غلوفوفاتش
+,Kosovo Polje,كوسوفو بولي
+,Kozhikode,

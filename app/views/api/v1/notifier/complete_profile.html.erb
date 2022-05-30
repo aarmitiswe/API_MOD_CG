@@ -1,0 +1,215 @@
+<style>
+  body{
+    background: #f1f1f1;
+    font-family:sans-serif;
+    font-weight: normal;
+  }
+  a{
+    color: #374b61;
+    text-decoration: none;
+  }
+  .header{
+    width:100%;
+    height: auto;
+    background-color: #374b61;
+    padding: 20px 0px;
+  }
+  .header img{
+    margin: 0px auto;
+    display: block;
+  }
+  .wrapper{
+    width:100%;
+    margin:0px auto;
+  }
+  .container-email{
+    background:#fff;
+    margin:10px 0px;
+    padding:20px 30px;
+    text-align: center;
+    box-shadow: 0px 1px 9px 0px rgba(55, 75, 97, 0.09);
+    padding-bottom: 30px;
+  }
+  .container-footer{
+    text-align: center;
+  }
+
+  .user-pic{
+    width: 97px;
+    height: 95px;
+    margin: 0px auto;
+    overflow: hidden;
+    border:1px solid #f1f1f1;
+    -moz-border-radius: 160px; -webkit-border-radius: 160px; border-radius: 160px;
+    margin-bottom: 20px;
+    float: left;
+    background-color:#badcfd;
+    background-image: url(images-email/user.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+  }
+  .user-pic i{
+    text-align: center;
+    display: block;
+  }
+  .user-pic img{
+    width: 100%;
+    height: 105px;
+    margin: 0px auto;
+  }
+
+  .company-pic{
+    width: 97px;
+    height: 95px;
+    margin: 0px auto;
+    overflow: hidden;
+    border:1px solid #f1f1f1;
+    -moz-border-radius: 160px; -webkit-border-radius: 160px; border-radius: 160px;
+    margin-bottom: 20px;
+    float: left;
+    background-color:#badcfd;
+    background-image: url(images-email/company.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+  }
+  .company-pic i img{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+  .company-pic i{
+    text-align: center;
+    display: block;
+  }
+  .arrow{
+    float: left;
+  }
+  h1{
+    color:#374b61;
+    font-size:32px;
+    margin-bottom:0px;
+  }
+  h5{
+    color:#97aec6;
+    font-size:18px;
+    margin:10px 0px 30px 0px;
+    font-weight: 100;
+  }
+  .bitton{
+    background:#3379bd;
+    color: #fff;
+    font-size:16px;
+    border:none;
+    padding:15px 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .bitton:hover{
+    background:#165592;
+  }
+  h4{
+    color:#648b9d;
+    font-size:16px;
+    font-weight: 100;
+    margin:10px 0px;
+    font-size: 14px;
+    color: #86a9b9;
+  }
+
+  h2{
+    color:#648b9d;
+    font-size:22px;
+    font-weight: 400;
+    margin:10px 0px;
+    color: #374b61;
+  }
+
+  p{
+    color: #6990a1;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 23px;
+    width: 100%;
+    margin: 0px auto;
+
+  }
+  strong{
+    color: #374b61;
+    font-weight: 400;
+  }
+
+  .image-section{
+    width: 100%;
+    float: left;
+  }
+
+  .social{
+    margin: 0 auto;
+    width:280px;
+  }
+  .social a:hover{ opacity:0.6  }
+  .center-box-single{
+    width: 100px;
+    margin: 0px auto;
+  }
+
+</style>
+
+<body>
+
+  <div class="wrapper">
+    <!-- header -->
+    <div class="header">
+      <div class="logo">
+        <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/mail-logo.png" align="middle">
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="container-email">
+
+      <div class="image-section">
+        <div class="center-box-single">
+          <div class="user-pic">
+            <% if jobseeker.user.avatar.blank? %>
+                <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/empty-profile.jpg" >
+            <% else %>
+                <img src="<%= jobseeker.user.avatar %>" >
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <h2>Hello <%= jobseeker.user.full_name %>,</h2>
+      <p>	This is a gentle reminder that there are plenty of jobs waiting for you on <strong>BLOOVO.COM</strong>
+        and we encourage you to complete your profile and enjoy the innovative online solution that we have for you.
+      </p>
+      <p>If you have any questions, or you require any help, please contact us at <a>hello@bloovo.com</a>.</p>
+
+
+      <h2>Best Wishes</h2>
+      <p>Team BLOOVO.COM</p>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="container-footer">
+      <div class="social">
+        <a href="https://www.facebook.com/BloovoWorld/" target="_blank"><img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/facebook.png"></a>
+        <a href="https://twitter.com/Bloovo" target="_blank"><img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/twitter.png"></a>
+        <a href="https://www.linkedin.com/company/bloovo" target="_blank"><img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/linkedin.png"></a>
+        <a href="https://plus.google.com/+Bloovo" target="_blank"><img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/google.png"></a>
+        <a href="https://www.instagram.com/bloovo_/" target="_blank"><img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/instagram.png"></a>
+        <a href="https://www.youtube.com/channel/UCuRLdElkaZaipKjKVJgICDQ" target="_blank"><img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/youtube.png"></a>
+      </div>
+      <h4>Copyright @ BLOOVO Middle East FZ LLC. All Rights Reserved.</h4>
+    </div>
+  </div>
+</body>

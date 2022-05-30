@@ -1,0 +1,6 @@
+id,name,ar_name
+1,No Visa,لا يوجد تأشيرة
+2,Tourist,تأشيرة سياحية
+3,Resident Visa - Transferable,إقامة قابلة للنقل
+4,Resident Visa - Non Transferable,إقامة غير قابلة للنقل
+5,Citizen,مواطن

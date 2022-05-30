@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bloovo- id",
+  "private_key_id": "private key id",
+  "private_key": "private key",
+  "client_email": "indexing-bloovo-google@iam.gserviceaccount.com",
+  "client_id": "client id",
+  "auth_uri": "oauth2/auth",
+  "token_uri": "token",
+  "auth_provider_x509_cert_url": "certs",
+  "client_x509_cert_url": "client cert url"
+}

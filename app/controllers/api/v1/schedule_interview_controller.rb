@@ -1,0 +1,2 @@
+class ScheduleInterviewController < ApplicationController
+end

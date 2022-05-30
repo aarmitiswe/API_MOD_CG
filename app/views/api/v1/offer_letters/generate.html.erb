@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= Rails.application.secrets[:ATS_NAME]["original_name"] %></title>
+  <%= wicked_pdf_stylesheet_link_tag "offer_letter.css" -%>
+</head>
+<body>
+<div class="offer-letter">
+  <!-- Header -->
+  <div class="header">
+    <div class="company-logo">
+      <%= wicked_pdf_image_tag @current_company.avatar(:original) %>
+    </div>
+    <div class="candidate">
+      <h4><%= Date.today.strftime("%d %b, %Y") %></h4>
+      <strong><%= @jobseeker.full_name %></strong>
+      <span><%= "#{@jobseeker.user.city.try(:name)}, #{@jobseeker.user.country.try(:name)}" %></span>
+      <span><%= @jobseeker.mobile_phone %></span>
+    </div>
+  </div>
+
+  <!-- body -->
+
+  <div class="body-text">
+    <div class="title"><h3><%= params[:offer_letter][:title]%></h3></div>
+    <%= params[:offer_letter][:content].html_safe %>
+    <br>
+    <p>Best Wishes</p>
+    <br>
+    <br>
+    <strong><%= @current_company.name %></strong>
+    <br>
+    <br>
+    <p>Offer Accepted&nbsp;&nbsp;<i>------------------------------------------------------</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;&nbsp;<i>---------------------------------------------------------------</i></p>
+  </div>
+  
+  <div class="company-logo">
+    <%= wicked_pdf_image_tag @e_signature %>
+  </div>
+  <div class="offer-footer">
+    <p>
+      <%= "#{@current_company.address_line1}, #{@current_company.address_line2}, #{@current_company.po_box}, "\
+              "#{@current_company.city_name}, #{@current_company.country_name}, Mob #{@current_company.phone}, Web #{@current_company.website}" %>
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<div>
+  <h1>Skills</h1>
+  <div class="uls">
+    <div class="ski padding-20-0">
+      <ul>
+        <% @jobseeker.jobseeker_skills.each do |jobseeker_skill| %>
+            <li><%= jobseeker_skill.skill.name %> <span class="navy"><%= "(#{jobseeker_skill.level_name || 'Beginner'})" %></span></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

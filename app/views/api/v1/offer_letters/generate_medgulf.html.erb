@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= Rails.application.secrets[:ATS_NAME]["original_name"] %></title>
+  <%= wicked_pdf_stylesheet_link_tag "offer_letter_neom.css" -%>
+  <style>
+    @page {
+      size: 7in 9.25in;
+      margin: 27mm 16mm 27mm 16mm;
+    }
+    h1, h2, h3, h4, h5, span, label, a, button, p{
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      font-family: Sans-Serif;
+
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+      font-size: 12px;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+
+
+    @font-face {
+      font-family: 'Noto Kufi Arabic';
+      src: url('../../../../assets/fonts/kufi/NotoKufiArabic.woff2') format('woff2'),
+      src: url('../../../../assets/fonts/kufi/NotoKufiArabic.woff') format('woff'),
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .offer-letter-2{
+      margin: 0 auto;
+      background: #fff;
+      position: relative;
+      padding: 15px;
+      text-align: left!important;
+    }
+    .company-logo{
+      width: 60px;
+      height: 60px;
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
+    .company-logo img{
+      width: 100%;
+      height: auto;
+    }
+
+    .candidate h4{
+      font-style: 14px!important;
+      color: #374b61;
+      font-weight: normal;
+      display: block;
+      text-align: left;
+    }
+
+    .candidate strong{
+      font-style: 14px!important;
+      color: #374b61;
+      font-weight: 600;
+      display: block;
+    }
+
+    .candidate span{
+      font-style: 14px!important;
+      color: #4f788a;
+      font-weight: normal;
+      display: block;
+      padding: 3px 0px;
+    }
+
+    .title{
+      display: block;
+    }
+    .body-text h5{
+      display: block;
+      border-bottom: 1px solid #f1f1f1;
+      text-align: center;
+      font-size: 16px;
+      color: #374b61;
+      font-weight: 600;
+      padding-bottom: 10px;
+      padding-top: 35px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+    }
+
+    .body-text p{
+      font-style: 14px!important;
+      color: #4f788a;
+      font-weight: normal;
+      display: block;
+      padding: 3px 0px;
+      line-height: 35px;
+    }
+
+    .body-text strong{
+      font-style: 14px!important;
+      color: #374b61;
+      font-weight: 600;
+      display: block;
+    }
+
+    .offer-footer{
+      border-top: 1px solid #f1f1f1;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .offer-footer p{
+      font-size: 14px;
+      color: #4f788a;
+      padding-top: 20px;
+    }
+
+    .offer-letter-esignature{
+      width: 150;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    /* style */
+    h1{
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      font-family: sans-serif;
+      margin-bottom: 20px;
+    }
+
+    div.Section1 {
+      page: Section1;
+    }
+    .logo_letter{
+      text-align: right;
+    }
+
+    .logo_letter img{
+      width: 60px;
+    }
+
+    span{
+      font-size: 14px;
+      display:block;
+    }
+    p{
+      font-size: 14px;
+      display: block;
+      line-height: 23px;
+
+    }
+    table{
+      font-size: 14px;
+      border: solid 1px #e5e5e5;
+      margin:0px auto;
+      width: 595px;
+      border-spacing: 0;
+    }
+    table tr td{
+      text-align: center;
+      border-top: solid 1px #e5e5e5;
+      border-bottom: solid 1px #e5e5e5;
+      padding: 9px;
+    }
+    table tr td.eng{
+        text-align: left;
+        background: #f1f2f6;
+    }
+    table tr td.arabic{
+        font-family: "Noto Kufi Arabic", sans-serif;
+        text-align: right;
+        font-weight: 600 !important;
+        font-size: 12px;
+        background: #f1f2f6;
+    }
+    .confirm-text{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- logo -->
+  <div class="logo_letter">
+    <%= wicked_pdf_image_tag @current_company.avatar(:original) %>
+  </div>
+
+  <!-- title -->
+  <h1>Job Offer</h1>
+
+
+    <table class="table" align="center">
+      <tr>
+        <td width="150" class="eng"><strong>Name</strong></td>
+        <td width="295"><%= @jobseeker.full_name %></td>
+        <td width="150" class="arabic">السم</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Nationality</strong></td>
+        <td width="295"><%= @jobseeker.nationality.name %></td>
+        <td width="150" class="arabic">الجنسية</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Date of Offer</strong></td>
+        <td width="295"><%= @offer_letter_request.try(:start_date).try(:strftime, "%d %b, %Y") %></td>
+        <td width="150" class="arabic">تاريخ العرض الوظيفي</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Position</strong></td>
+        <td width="295"><%= (@jobseeker.try(:jobseeker_experiences)) ? @jobseeker.try(:jobseeker_experiences).try(:last).try(:position): @jobseeker.try(:preferred_position) %></td>
+        <td width="150" class="arabic">المسمى الوظيفي</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Operations /Division / Department </strong></td>
+        <td width="295"><%=@job_request.hiring_manager.department.name %></td>
+        <td width="150" class="arabic">وحدة التشغيل/  القطاع / الإدارة</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Job Grade</strong></td>
+        <td width="295"><%= @offer_letter_request.try(:job_grade) %></td>
+        <td width="150" class="arabic">الدرجة الوظيفية</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Job Location</strong></td>
+        <td width="295"><%= @jobseeker.user.city.name %>, <%= @jobseeker.user.country.name %></td>
+        <td width="150" class="arabic">مكان العمل</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Monthly  Basic Salary</strong></td>
+        <td width="295"><%= @offer_letter_request.basic_salary %> SR</td>
+        <td width="150" class="arabic">الراتب الاساسي</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Housing Allowance</strong></td>
+        <td width="295"><%= @offer_letter_request.housing_salary %> SR</td>
+        <td width="150" class="arabic">بدل السكن</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Transportation Allowance</strong></td>
+        <td width="295"><%= @offer_letter_request.transportation_salary %> SR</td>
+        <td width="150" class="arabic">بدل الموصلات</td>
+      </tr>
+      <tr>
+        <td width="150" class="eng"><strong>Total Salary</strong></td>
+        <td width="295"><%= @offer_letter_request.total_salary %> SR</td>
+        <td width="150" class="arabic">الراتب الإجمالي </td>
+      </tr>
+      <tr>
+          <td width="150" class="eng"><strong>Medical Insurance</strong></td>
+          <td>Medical coverage for self and family As per company’s policy</td>
+          <td width="150" class="arabic">التامين الطبي</td>
+      </tr>
+      <tr>
+          <td width="150" class="eng"><strong>Bonus</strong></td>
+          <td width="295">As per company’s policy</td>
+          <td width="150" class="arabic">المكافأة</td>
+      </tr>
+      <tr>
+          <td width="150" class="eng"><strong>Vacation Entitlement</strong></td>
+          <td width="295">22 Working days paid leave every one (1) year of service</td>
+          <td width="150" class="arabic">الاجازات السنوية</td>
+      </tr>
+      <tr>
+          <td width="150" class="eng"><strong>Travel Entitlements</strong></td>
+          <td width="295">As per company’s policy</td>
+          <td width="150" class="arabic">مستحقات السفر</td>
+      </tr>
+      <tr>
+          <td width="150" class="eng"><strong>Probation Period</strong></td>
+          <td width="295">90 Days effective from the joining date</td>
+          <td width="150" class="arabic">فترة التجربة</td>
+      </tr>
+      <tr>
+          <td width="150" class="eng"><strong>Terms of Contract</strong></td>
+          <td width="295">One (1) Year</td>
+          <td width="150" class="arabic">مدة التعاقد</td>
+      </tr>
+      <tr>
+          <td width="150" class="eng"><strong>Cancellation of  Service Agreement</strong></td>
+          <td width="295">Upon issuance of two (2) month notice in advance by either parties</td>
+          <td width="150" class="arabic">إلغاء العقد</td>
+      </tr>
+      <tr>
+          <td width="150" class="eng"><strong>Note</strong></td>
+          <td width="295">This offer is subject to:<br>
+              - Saudi Labor Law and company internal policies and procedures.<br>
+              - Medical examination and criminal clearance certificate.
+          </td>
+          <td width="150" class="arabic">ملاحظات</td>
+      </tr>
+    </table>
+  <p class="confirm-text">Please re-confirm your acceptance to our offer by signing on the space provided below and identifying your starting date, this Job Offer valid for 5 days from the date of issuance</p>
+
+  <!-- table -->
+
+  <table class="table" style="margin:0 auto;">
+      <tr>
+          <td width="150" class="eng"><strong>Confirming the Joining Date</strong></td>
+          <td width="295"><%= @offer_letter_request.try(:joining_date).try(:strftime, "%d %b, %Y") %></td>
+          <td width="150" class="arabic">تاكيد تاريخ مباشرة العمل</td>
+        </tr>
+    </table>
+
+
+
+  <table class="table" style="margin:0 auto;">
+          <tr>
+              <td class="eng" width="595" style="text-align: center;"><strong>Chief of Human Resources and Administrative Affairs Officer</strong></td>
+          </tr>
+          <tr>
+              <td width="595" style="text-align: center;">Yasir Algholalikah</td>
+          </tr>
+          <tr>
+              <td width="595" class="arabic" style="text-align: center;">رئيس الموارد البشرية والشؤون الإدارية التنفيذي</td>
+          </tr>
+          <% if @current_user.try(:document_e_signature).try(:url) %>
+            <tr>
+                <td width="595" class="arabic" style="text-align: center;">
+                  <img class="offer-letter-esignature" src="<%= @current_user.try(:document_e_signature).try(:url) %>">
+                </td>
+            </tr>
+          <% end %>
+      </table>
+
+
+
+
+
+</body>
+</html>

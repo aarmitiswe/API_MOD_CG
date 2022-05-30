@@ -1,0 +1,120 @@
+Id,Name, Arabic Name
+2,Shipping & Marine Services, الشحن والخدمات البحرية 
+3,Airlines, الطيران 
+4,Translation, الترجمة 
+7,Administration, الإدارة 
+8,Customer Service, خدمة العملاء 
+9,Human Resources, الموارد البشرية 
+12,Management Consulting, الإستشارات الإدارية 
+13,Banking, الأعمال المصرفية 
+14,Business Consulting, إستشارات تجارية 
+15,Fund Raising, جمع الأموال الإستثمارية 
+17,Investment Management, إدارة الاستثمارات 
+18,Investment Banking, الخدمات المصرفية الاستثمارية 
+19,Insurance, التأمين 
+23,Capital Markets, أسواق المال 
+28,Accounting & Auditing, المحاسبة والتدقيق 
+57,Freight Forwarding & Cargo, الشحن والتخليص  
+60,Aviation & Aerospace, الطيران والفضاء 
+63,Packaging and Containers, التعبئة والتغليف 
+64,Architecture & Planning, العمارة والتخطيط 
+65,Malls & Centres, مراكز التسوق 
+68,Construction, الإنشاءات 
+70,Civil Engineering, الهندسة المدنية 
+71,Retail, البيع بالتجزئة 
+74,Wholesale, البيع بالجملة 
+76,Apparel & Fashion, ملابس وأزياء 
+78,Computer & Network Security, الكمبيوتر وأمن الشبكات 
+79,Computer Games, ألعاب الكمبيوتر 
+80,Computer Hardware, أجهزة الكمبيوتر 
+81,Computer Software, برامج الكمبيوتر 
+82,Computer Networking, الشبكات 
+83,Food & Beverages, المواد الغذائية والمشروبات 
+85,Food Distribution, توزيع الموادالغذائية 
+86,Food Manufacturing & Processing , صناعةالتجهيزات الغذائية                 
+87,Restaurants, المطاعم 
+88,Dairy, صناعات الألبان 
+90,Hospitals & Clinics, المستشفيات والعيادات الطبية 
+91,Laboratories, المختبرات 
+94,Health & Fitness, الصحة واللياقة 
+95,Pharmaceuticals & Pharmacies, الصناعات الدوائية والصيدليات 
+96,Nurseries, الحضانات 
+98,Higher Education, التعليم العالي 
+99,Online Training, التدريب عبر الانترنت 
+100,Training & Coaching, التدريب و الإرشاد 
+102,Education Management, إدارة التعليم 
+103,Commodity Trading, تجارة السلع 
+104,Steel Production & Distribution, إنتاج وتوزيع الصلب 
+105,Aluminum Production & Distribution,إنتاج وتوزيع الألمنيوم 
+106,Mining & Metals, التعدين والمعادن 
+107,Plastics, البلاستيك 
+111,Social & Digital Media, الوسائط الإجتماعية والرقمية 
+113,"Leisure, Travel & Tourism", الترفيه والسفر والسياحة 
+115,Recreational Facilities and Services, المرافق والخدمات الترفيهية 
+116,Automotive Manufacturing, صناعة السيارات 
+118,"Glass, Ceramics & Concrete", الزجاج والسيراميك والخرسانة 
+119,Industrial Manufacturing, الصناعات التحويلية 
+120,Building Materials, مواد البناء 
+124,Chemicals, الكيماويات 
+125,Mechanical Manufacturing, الصناعات الميكانيكية 
+126,Semiconductors, أشباه الموصلات 
+127,Oil & Gas, النفط والغاز 
+128,Petrochemicals, البتروكيماويات 
+129,Energy & Alternative Energy, الطاقة والطاقة البديلة 
+130,Consumer Electronics, الأجهزة الإلكترونية  
+131,Consumer Goods, السلع الإستهلاكية 
+132,Furniture, الأثاث 
+133,Luxury Goods & Jewelry,  السلع الفاخرة والمجوهرات 
+136,Medical Devices, الأجهزة الطبية 
+141,Graphic Design, التصميم الجرافيكي 
+142,Photography, التصوير الفوتوغرافي 
+144,Government Relations, العلاقات الحكومية 
+93,Healthcare Services, الرعاية الصحية 
+11,General Trading, التجارة العامة 
+148,Public Relations, العلاقات العامة 
+149,Public Safety, السلامة العامة 
+150,IT Services, خدمات تكنولوجيا المعلومات 
+153,Wireless & Cloud, اللاسلكي والحوسبة السحابية 
+154,Textile Manufacturing, تصنيع المنسوجات 
+155,Logistics and Supply Chain,الخدمات اللوجستية والإنتاج 
+156,Warehousing, التخزين 
+158,Sports Activities, الأنشطة الرياضية 
+160,Hotels & Resorts, الفنادق والمنتجعات 
+161,Events Management & Services, إدارة المناسبات والخدمات 
+162,Defense Services, خدمات الدفاع 
+163,Space Initiatives, المبادرات الفضائية 
+165,Printing & Publishing, الطباعة والنشر 
+166,Newspapers & Magazines, الصحف والمجلات 
+167,Stationary Distribution, توزيع الأدوات المكتبية 
+171,Telecommunications, الإتصالات السلكية واللاسلكية 
+172,Marketing and Advertising, التسويق والإعلان 
+173,Market Research, البحوث السوقية 
+174,Arts and Crafts, الفنون والحرف 
+175,Biotechnology, التكنولوجيا الحيوية 
+176,Cosmetics, مستحضرات التجميل 
+177,Environmental Services, الخدمات البيئية 
+178,Farming, الزراعة 
+180,Museums and Institutions, المتاحف والمؤسسات 
+181,Music, الموسيقى 
+182,Nanotechnology, تقنية النانو 
+183,Philanthropy, العمل الخيري 
+184,Religious Institutions, المؤسسات الدينية 
+185,Research & Development, البحث والتطوير 
+186,Staffing and Recruiting, التوظيف 
+187,Tobacco, التبغ 
+188,Legal Services, الخدمات القانونية 
+189,Facilities Management, إدارة المرافق 
+190,Real Estate, العقارات 
+192,Fashion & Design, الموضة والتصميم 
+193,Engineering, الهندسة 
+194,Conglomerate, الشركات القابضة 
+195,Animation & Motion Pictures, الصور المتحركة 
+196,"Beauty, Salon, & Spa", التجميل والمعاهد الصحية 
+197,E-Commerce, التجارة الإلكترونية 
+198,E-Learning,التعلم الإلكتروني 
+199,Electrical/Electronic Manufacturing, التصنيع الكهربائي والإلكتروني 
+201,Media, وسائل الإعلام 
+202,Private Equity & Venture Capital, استثمارات الملكية الخاصة  
+204,Transportation, النقل 
+205,Maritime, البحري 
+206,Financial Services, الخدمات المالية 

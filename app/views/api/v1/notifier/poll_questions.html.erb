@@ -1,0 +1,195 @@
+<style>
+  body{
+    background: #f1f1f1;
+    font-family:sans-serif;
+    font-weight: normal;
+  }
+  a{
+    color: #374b61;
+    text-decoration: none;
+  }
+  .header{
+    width:100%;
+    height: auto;
+    background-color: #374b61;
+    height: 80px;
+  }
+  .wrapper{
+    width:100%;
+    margin:0px auto;
+  }
+  .container-email{
+    background:#fff;
+    margin:10px 0px;
+    padding:20px 30px;
+    text-align: center;
+    box-shadow: 0px 1px 9px 0px rgba(55, 75, 97, 0.09);
+    padding-bottom: 30px;
+  }
+  .container-footer{
+    text-align: center;
+  }
+  h1{
+    color:#374b61;
+    font-size:32px;
+    margin-bottom:0px;
+  }
+  h5{
+    color:#97aec6;
+    font-size:18px;
+    margin:10px 0px 30px 0px;
+    font-weight: 100;
+  }
+  .bitton{
+    background:#3379bd;
+    color: #fff;
+    font-size:16px;
+    border:none;
+    padding:15px 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .bitton:hover{
+    background:#165592;
+  }
+  h4{
+    color:#648b9d;
+    font-size:16px;
+    font-weight: 100;
+    margin:10px 0px;
+    font-size: 14px;
+    color: #86a9b9;
+  }
+
+  h2{
+    color:#648b9d;
+    font-size:22px;
+    font-weight: 400;
+    margin:10px 0px;
+    color: #374b61;
+  }
+  h3{
+    color:#648b9d;
+    font-size:20px;
+    font-weight: 400;
+    margin:10px 0px;
+    color: #374b61;
+    text-align: left;
+  }
+
+  p{
+    color: #6990a1;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 23px;
+    width: 75%;
+    margin: 0px auto;
+
+  }
+  strong{
+    color: #374b61;
+    font-weight: 400;
+  }
+
+  .social{
+    margin: 0 auto;
+    width:280px;
+  }
+  .social a:hover{ opacity:0.6  }
+  .logo{
+    width: 20%;
+    float: left;
+  }
+  .logo img{
+    height: 50px;
+    width: auto;
+    padding: 15px;
+  }
+  .heading{
+    float: left;
+    width: 80%;
+    text-align: right;
+  }
+  .heading h2{
+    color: #fff;
+    font-size:16px;
+    margin: 0px;
+    padding: 20px 15px 0px 0px;
+  }
+  .heading span{
+    color: #91aac6;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 15px 15px 0px;
+  }
+  .poll span{
+    font-size: 14px;
+    color: #4f788a;
+    text-align: left!important;
+    display: block;
+  }
+  .poll{
+    text-align: left;
+    margin-top: 20px;
+    color: #4f788a;
+  }
+
+</style>
+
+<body>
+
+  <div class="wrapper">
+    <!-- header -->
+    <div class="header">
+      <div class="logo">
+        <img src="<%= Rails.application.secrets[:BACKEND] %>/email_templates/mail-logo.png" align="middle">
+      </div>
+      <div class="heading">
+        <h2>New Poll</h2>
+        <span><%= Date.today.strftime("%d %b, %Y") %></span>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="container-email">
+      <h2>BLOOVO.COM has Recently Added a New Poll</h2>
+      <p>Your participation is highly appreciated. Once it is over, we will share with you the results.</p>
+      <h2>We Appreciate your Participation!</h2>
+    </div>
+
+
+    <div class="container-email poll">
+      <h3><%= poll_question.question %></h3>
+      <span><%= poll_question.created_at.strftime("%d %b, %Y") %></span>
+      <br>
+      <form>
+        <% poll_question.poll_answers.each do |poll_answer| %>
+            <input type="radio" name="answer" value="answer">
+            <label for="answer"><%= poll_answer.answer %> </label>
+            <br><br>
+        <% end %>
+
+        <a href="<%= "#{Rails.application.secrets[:FRONTEND]}/#{user.current_role}" %>/dashboard/polls" class="bitton" style="float:left">Vote</a>
+        <br><br>
+      </form>
+      <br>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-footer">
+      <div class="social">
+        <a href="https://www.facebook.com/BloovoWorld/" target="_blank"><img src="<%= Rails.application.secrets[:BACKEND] %>/email_templates/facebook.png"></a>
+        <a href="https://twitter.com/Bloovo" target="_blank"><img src="<%= Rails.application.secrets[:BACKEND] %>/email_templates/twitter.png"></a>
+        <a href="https://www.linkedin.com/company/bloovo" target="_blank"><img src="<%= Rails.application.secrets[:BACKEND] %>/email_templates/linkedin.png"></a>
+        <a href="https://plus.google.com/+Bloovo" target="_blank"><img src="<%= Rails.application.secrets[:BACKEND] %>/email_templates/google.png"></a>
+        <a href="https://www.instagram.com/bloovo_/" target="_blank"><img src="<%= Rails.application.secrets[:BACKEND] %>/email_templates/instagram.png"></a>
+        <a href="https://www.youtube.com/channel/UCuRLdElkaZaipKjKVJgICDQ" target="_blank"><img src="<%= Rails.application.secrets[:BACKEND] %>/email_templates/youtube.png"></a>
+      </div>
+      <h4>Copyright @ BLOOVO Middle East FZ LLC. All Rights Reserved.</h4>
+    </div>
+  </div>
+
+</body>

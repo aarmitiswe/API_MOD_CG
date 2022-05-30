@@ -1,0 +1,18 @@
+<div>
+  <h1>Education</h1>
+  <div class="padding-20-0">
+    <% @jobseeker.jobseeker_educations.each do |jobseeker_education| %>
+        <div class="uls">
+          <h4><i class="icon-round"></i> <%= jobseeker_education.school %></h4>
+          <div class="light">
+            <h4><%= jobseeker_education.field_of_study %></h4>
+            <% if  jobseeker_education.grade %>
+              <h4><span class="navy"> <%= "Grade: #{jobseeker_education.grade}" %></span></h4>
+            <% end %>
+            <h4><%= "#{jobseeker_education.city.try(:name)}, #{jobseeker_education.country.try(:name)}" %></h4>
+            <h4><%= "#{get_month_year(jobseeker_education.from, jobseeker_education.to)} (#{subtract_to_years_months(jobseeker_education.from, jobseeker_education.to)})" %></h4>
+          </div>
+        </div>
+  <% end %>
+  </div>
+</div>

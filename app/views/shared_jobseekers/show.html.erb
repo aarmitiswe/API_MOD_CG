@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @shared_jobseeker.sender %>
+</p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @shared_jobseeker.receiver %>
+</p>
+
+<p>
+  <strong>Jobseeker:</strong>
+  <%= @shared_jobseeker.jobseeker %>
+</p>
+
+<%= link_to 'Edit', edit_shared_jobseeker_path(@shared_jobseeker) %> |
+<%= link_to 'Back', shared_jobseekers_path %>

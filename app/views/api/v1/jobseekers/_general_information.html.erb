@@ -1,0 +1,107 @@
+<div>
+  <h1>General Information</h1>
+  <div class="genearalinfo">
+    <% if @jobseeker.sector %>
+        <div class="ginfo">
+          <h3>Sector</h3>
+          <p><%= @jobseeker.sector.name %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.functional_area %>
+        <div class="ginfo">
+          <h3>Functional Area</h3>
+          <p><%= @jobseeker.functional_area.area %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.job_experience_level %>
+        <div class="ginfo">
+          <h3>Highest Education</h3>
+          <p><%= @jobseeker.job_education.level %></p>
+        </div>
+  <% end %>
+    <% if @jobseeker.job_experience_level %>
+        <div class="ginfo">
+          <h3>Experience Level</h3>
+          <p><%= @jobseeker.job_experience_level.level %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.years_of_experience %>
+        <div class="ginfo">
+          <h3>Years of Experience</h3>
+          <p><%= "#{@jobseeker.years_of_experience} Years" %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.job_type %>
+        <div class="ginfo">
+          <h3>Current Job Type</h3>
+          <p><%= @jobseeker.job_type.name %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.current_salary %>
+        <div class="ginfo">
+          <h3>Current Monthly Salary (USD)</h3>
+          <p><%= @jobseeker.current_salary.to_i.to_s.reverse.scan(/\d{1,3}/).join(",").reverse %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.expected_salary %>
+        <div class="ginfo">
+          <h3>Expected Monthly Salary (USD)</h3>
+          <p><%= @jobseeker.expected_salary.to_i.to_s.reverse.scan(/\d{1,3}/).join(",").reverse %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.nationality %>
+        <div class="ginfo">
+          <h3>Nationality</h3>
+          <p><%= @jobseeker.nationality.name %></p>
+        </div>
+    <% end %>
+    <% unless @jobseeker.languages.blank? %>
+        <div class="ginfo">
+          <h3>Languages</h3>
+          <p><%= @jobseeker.languages.pluck(:name).join(',') %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.user.birthday %>
+        <div class="ginfo">
+          <h3>Age</h3>
+          <p><%= "#{(Date.today - @jobseeker.user.birthday).to_i / 365} Years Old" %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.user.gender %>
+        <div class="ginfo">
+          <h3>Gender</h3>
+          <p><%= @jobseeker.user.gender_type.humanize %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.marital_status %>
+        <div class="ginfo">
+          <h3>Marital Status</h3>
+          <p><%= @jobseeker.marital_status.humanize %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.visa_status %>
+        <div class="ginfo">
+          <h3>Visa Status</h3>
+          <p><%= @jobseeker.visa_status.name.humanize %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.driving_license_country %>
+        <div class="ginfo">
+          <h3>Driving License Issued From</h3>
+          <p><%= @jobseeker.driving_license_country.name %></p>
+        </div>
+    <% end %>
+    <% if @jobseeker.notice_period_in_month %>
+        <div class="ginfo">
+          <h3>Notice Period</h3>
+          <% if @jobseeker.notice_period_in_month.present? && @jobseeker.notice_period_in_month > 0 %>
+              <p><%= "#{@jobseeker.notice_period_in_month} Month"%></p>
+          <% else %>
+              <p>Less than 1 Month</p>
+          <% end %>
+
+        </div>
+    <% end %>
+    <div class="clr"></div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @event_visitor.name %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @event_visitor.company %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @event_visitor.position %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @event_visitor.department %>
+</p>
+
+<p>
+  <strong>Mobile phone:</strong>
+  <%= @event_visitor.mobile_phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @event_visitor.email %>
+</p>
+
+<%= link_to 'Edit', edit_api_v1_event_visitor_path(@event_visitor) %> |
+<%= link_to 'Back', api_v1_event_visitors_path %>

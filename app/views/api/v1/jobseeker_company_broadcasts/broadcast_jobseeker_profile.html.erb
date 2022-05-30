@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <style type="text/css">
+    body{
+      margin: 0px;
+      padding: 0;
+      background: #6891E4;
+      font-family: sans-serif;
+      color: #374B61;
+    }
+    .row{
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #f1f1f1;
+      background-color: #fff;
+      float: left;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    .profile{
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      float: left;
+      margin-right: 10px;
+    }
+    .profile img{
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+    .detail span{
+      font-size: 14px;
+      color: #648b9d;
+      display: block;
+      padding: 2px 0px;
+    }
+    .detail strong{
+      font-size: 16px;
+      color: #465871;
+      font-weight: bold;
+    }
+    .detail{
+      width: calc(100% - 110px);
+      float: left;
+    }
+    .clearfix {
+      clear: both!important;
+    }
+    .frame{
+      width: 580px;
+      float: left;
+    }
+    .half-bx{
+      width: 50%;
+      float: left;
+    }
+    .half-bx span{
+      font-size: 14px;
+      color: #648b9d;
+      display: block;
+      padding: 2px 0px;
+    }
+    .half-bx strong{
+      font-size: 16px;
+      color: #465871;
+      display: block;
+      padding: 2px 0px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .box{
+      border: 1px solid #f1f1f1;
+      margin: 2px 0px;
+      padding: 5px 10px;
+    }
+    .heading{
+      font-size: 16px;
+      color: #465871;
+      font-weight: bold;
+      padding: 2px 0px;
+      margin-bottom: 10px;
+      display: block;
+      margin-top: 10px;
+    }
+    .content{
+      font-size: 14px;
+      color: #648b9d;
+      display: block;
+      padding: 2px 0px;
+      line-height: 20px;
+    }
+    .exp-content{
+      width: 96%;
+      border: 1px solid #f1f1f1;
+      float: left;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+    .exp-content b{
+      font-size: 14px;
+      color: #465871;
+    }
+    .exp-content span{
+      font-size: 14px;
+      color: #648b9d;
+      display: block;
+      padding: 2px 0px;
+    }
+    ul{margin:0px; padding:0px;}
+    ul li{display: inline-block; width: auto; padding:5px 10px; border:1px solid #f1f1f1; margin: 2px; float: left; color: #648b9d; font-size: 14px;}
+    .main-heading{
+      font-size: 26px;
+      color: #fff;
+      display: block;
+      text-align: center;
+      padding: 20px 0px;
+      padding-top: 130px;
+      line-height: 40px;
+      width: 95%;
+      margin: 0px auto;
+    }
+    .social{
+      margin: 0px auto;
+      width: 203px;
+    }
+    .bg{
+      background-image: url('https://gallery.mailchimp.com/68c0b59f3062e3ba384dbcda4/images/870babfd-91a8-4ea6-a902-872d19f218c8.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-blend-mode: soft-light;
+    }
+    .copy{
+      color: #648b9d;
+    }
+
+
+    @media only screen and (max-width:480px){
+      .frame{
+        width: 100%!important;
+      }
+      .header-sec{
+        width: 100%!important;
+      }
+      .mobile-fit{
+        width: 100%!important;
+      }
+      .mobile-fit-container{
+        width: 88%!important;
+      }
+      .half-bx{
+        width: 100%!important;
+      }
+      .no-padding-mb{
+        padding: 15px !important;
+      }
+      .row{
+        width: 100%!important;
+      }
+      .detail{
+        width: 100%!important;
+        border-top: 1px solid #f1f1f1!important;
+        margin-top: 10px!important;
+      }
+      .copy{
+        color: #648b9d!important;
+        font-size: 10px!important;
+      }
+      .bg{
+        background-position: 50% 20px!important;
+        background-size: 120px!important;
+      }
+      .main-heading{
+        font-size: 20px!important;
+        display: block;
+        width: 98%!important;
+        text-align: center;
+        margin:0px auto;
+        line-height: 30px!important;
+      }
+      .bt-mob{
+        width: 94%!important;
+      }
+      .bg-fix{
+        background-size: 100%!important;
+      }
+      .social{
+        margin: 0px auto;
+        width: 80%!important;
+      }
+    }
+    @media only screen and (max-width:767px){
+      .frame{
+        width: 100%!important;
+      }
+      .header-sec{
+        width: 100%!important;
+      }
+      .mobile-fit{
+        width: 100%!important;
+      }
+      .mobile-fit-container{
+        width: 88%!important;
+      }
+      .half-bx{
+        width: 100%!important;
+      }
+      .no-padding-mb{
+        padding: 15px !important;
+      }
+      .row{
+        width: 100%!important;
+      }
+      .detail{
+        width: 100%!important;
+        border-top: 1px solid #f1f1f1!important;
+        margin-top: 10px!important;
+      }
+      .copy{
+        color: #648b9d!important;
+        font-size: 10px!important;
+      }
+      .bg{
+        background-position: 50% 20px!important;
+        background-size: 120px!important;
+      }
+      .main-heading{
+        font-size: 18px!important;
+        display: block;
+        width: 98%!important;
+        text-align: center;
+        margin:0px auto;
+        line-height: 30px!important;
+      }
+      .bt-mob{
+        width: 94%!important;
+      }
+      .bg-fix{
+        background-size: 100%!important;
+      }
+      .mob-text{
+        font-size: 10px!important;
+      }
+      .social{
+        margin: 0px auto;
+        width: 80%!important;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+<div class="bg-fix" style="background-image: url(https://gallery.mailchimp.com/68c0b59f3062e3ba384dbcda4/images/50485d60-29e9-4b8e-8893-db6d3128449e.png); background-repeat: no-repeat; background-position: right top; background-size: 50%; width: 100%">
+  <!-- logo -->
+  <table style="width: 100%;">
+    <tr>
+      <td class="header-sec" style="width:600px; padding:20px 0px; text-align: center; ">
+        <img src="https://gallery.mailchimp.com/68c0b59f3062e3ba384dbcda4/images/ad8088ed-3fba-4c0d-9750-f7792aeb98fb.png" style="display:block; margin:0px auto; height: 60px;">
+      </td>
+    </tr>
+  </table>
+
+  <!-- header -->
+  <div class="bg" style="width: 100%;  padding-top: 20px; padding-bottom: 20px; float: left; margin-bottom: 10px;">
+    <h1 class="main-heading">A BLOOVO Member has broadcasted<br> <%= jobseeker.user.is_male? ? "his" : "her" %> Profile to You!</h1>
+
+    <!-- body -->
+    <div class="mobile-fit bt-mob" style="margin-top:10px;background: #fff; width: 600px; margin:0px auto;border-radius: 4px;">
+      <div class="no-padding-mb" style="padding:50px;font-family: sans-serif; color: #648B9D; border-radius: 4px;">
+        <p style="font-size: 16px;">Hello <strong><%= company.owner.full_name %>,</strong></p>
+        <p style="line-height:24px; font-size: 16px; margin-bottom: 0px; margin-top: 0px;">
+          <strong><%= jobseeker.full_name %></strong> has broadcasted <%= jobseeker.user.is_male? ? "his" : "her" %> profile to you, and has shown interest in joining your team. <%= jobseeker.user.is_male? ? "His" : "Her" %> profile summary is highlighted below, and a copy of <%= jobseeker.user.is_male? ? "his" : "her" %> CV is attached.
+        </p>
+        <p style="font-size: 16px; margin-bottom: 0px;"> Best Wishes</p>
+        <strong style="font-size: 16px;">BLOOVO Client Success Team</strong>
+        <br>
+      </div>
+
+    </div>
+
+    <div class="mobile-fit-container" style="width: 580px; height: auto; background-color: #fff; margin:20px auto; margin-bottom: 0px; padding:10px; ">
+      <div class="frame">
+        <!-- first stage -->
+        <div class="row">
+          <div class="profile"><img src="<%= jobseeker.user.avatar.url(:original) %>" style="width: 100%; height: 100px; object-fit: cover;"></div>
+          <div class="detail">
+            <strong><%= jobseeker.full_name %></strong>
+            <span><%= jobseeker.current_position || "No Position" %> </span>
+            <span><%= jobseeker.current_company.try(:company_name) || "No Company" %></span>
+            <span><%= jobseeker.sector.try(:name) %></span>
+            <span><%= "#{jobseeker.user.city.try(:name)}, #{jobseeker.user.country.try(:name)}" %></span>
+          </div>
+        </div>
+
+        <!-- contact details -->
+        <div class="row">
+          <div class="half-bx">
+            <span> <%= jobseeker.user.email %></span>
+            <span> <%= jobseeker.mobile_phone %></span>
+          </div>
+          <div class="half-bx">
+            <span><%= jobseeker.address_line1 %></span>
+            <span><%= jobseeker.address_line2 %></span>
+            <span><%= "#{jobseeker.current_city.try(:name)}, #{jobseeker.current_country.try(:name)}" %></span>
+          </div>
+        </div>
+
+        <!-- Professional Information -->
+        <div class="row">
+          <div class="half-bx">
+            <strong>Professional Information</strong>
+            <div class="box">
+              <span>Sector</span>
+              <span style="color: #465871"><%= jobseeker.sector.try(:name) %></span>
+            </div>
+            <div class="box">
+              <span>Functional Area</span>
+              <span style="color: #465871"><%= jobseeker.functional_area.try(:area) %></span>
+            </div>
+            <div class="box">
+              <span>Years of Experience </span>
+              <span style="color: #465871"><%= jobseeker.years_of_experience %></span>
+            </div>
+            <div class="box">
+              <span>Experience Level </span>
+              <span style="color: #465871"><%= jobseeker.job_experience_level.try(:level) %></span>
+            </div>
+            <div class="box">
+              <span>Highest Education</span>
+              <span style="color: #465871"><%= jobseeker.job_education.try(:name) %></span>
+            </div>
+            <div class="box">
+              <span>Current Job Type</span>
+              <span style="color: #465871"><%= jobseeker.job_type.try(:name) %></span>
+            </div>
+            <div class="box">
+              <span>Current Monthly Salary (USD)</span>
+              <span style="color: #465871"><%= jobseeker.current_salary %></span>
+            </div>
+            <div class="box">
+              <span>Expected Monthly Salary (USD)</span>
+              <span style="color: #465871"><%= jobseeker.expected_salary %></span>
+            </div>
+            <div class="box">
+              <span>Notice Period</span>
+              <span style="color: #465871"><%= jobseeker.notice_period_as_words  %></span>
+            </div>
+          </div>
+
+          <!-- Professional Information -->
+          <div class="half-bx">
+            <strong>Personal Information</strong>
+            <div class="box">
+              <span>Nationality</span>
+              <span style="color: #465871"><%= jobseeker.nationality.try(:name) %></span>
+            </div>
+            <div class="box">
+              <span>Marital Status</span>
+              <span style="color: #465871"><%= jobseeker.marital_status.try(:humanize) %></span>
+            </div>
+            <div class="box">
+              <span>Age</span>
+              <span style="color: #465871"><%= jobseeker.age %> Years Old</span>
+            </div>
+            <div class="box">
+              <span>Gender</span>
+              <span style="color: #465871"><%= jobseeker.user.gender_type.try(:humanize) %></span>
+            </div>
+            <div class="box">
+              <span>Visa status</span>
+              <span style="color: #465871"><%= jobseeker.visa_status.try(:name) %></span>
+            </div>
+            <div class="box">
+              <span>Driving License Issued From</span>
+              <span style="color: #465871"><%= jobseeker.driving_license_country.try(:name) %></span>
+            </div>
+            <div class="box">
+              <span>Languages</span>
+              <span style="color: #465871"><%= jobseeker.languages.pluck(:name).join(", ") %></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- summary -->
+        <div class="row">
+          <strong class="heading">Summary</strong>
+          <span class="content"><%= jobseeker.summary %></span>
+        </div>
+
+
+        <% if jobseeker.jobseeker_experiences.count > 0 %>
+            <!-- Work Experience -->
+            <div class="row">
+              <strong class="heading">Work Experience</strong>
+
+              <% jobseeker.jobseeker_experiences.each do |jobseeker_experience| %>
+                  <div class="exp-content">
+                    <div class="half-bx">
+                      <b><%= jobseeker_experience.company_name %></b>
+                      <span><%= jobseeker_experience.position %></span>
+                      <span><%= jobseeker_experience.sector.try(:name) %></span>
+                    </div>
+                    <div class="half-bx">
+                      <span><%= "#{jobseeker_experience.get_month_year} (#{jobseeker_experience.subtract_to_years_months})" %></span>
+                      <span><%= "#{jobseeker_experience.city.try(:name)}, #{jobseeker_experience.country.try(:name)}" %></span>
+                    </div>
+                  </div>
+              <% end %>
+            </div>
+        <% end %>
+
+
+        <% if jobseeker.jobseeker_educations.count > 0 %>
+            <!-- education -->
+            <div class="row">
+              <strong class="heading">Education</strong>
+              <% jobseeker.jobseeker_educations.each do |jobseeker_education| %>
+                  <div class="exp-content">
+                    <div class="half-bx">
+                      <b><%= jobseeker_education.school %></b>
+                      <span><%= jobseeker_education.field_of_study %></span>
+                    </div>
+                    <div class="half-bx">
+                      <span><%= "#{jobseeker_education.city.try(:name)}, #{jobseeker_education.country.try(:name)}" %></span>
+                      <span><%= "#{jobseeker_education.get_month_year} (#{jobseeker_education.subtract_to_years_months})" %></span>
+                      <span>Grade: <%= jobseeker_education.grade %></span>
+                    </div>
+                  </div>
+              <% end %>
+            </div>
+        <% end %>
+
+
+        <% if jobseeker.jobseeker_certificates.count > 0 %>
+            <!-- Certificates -->
+            <div class="row">
+              <strong class="heading">Certificates</strong>
+              <% jobseeker.jobseeker_certificates.each do |jobseeker_certificate| %>
+                  <div class="exp-content">
+                    <div class="half-bx">
+                      <b><%= jobseeker_certificate.name %></b>
+                      <span><%= jobseeker_certificate.institute %></span>
+                    </div>
+                    <div class="half-bx">
+                      <span><%= "#{jobseeker_certificate.get_month_year} (#{jobseeker_certificate.subtract_to_years_months})" %></span>
+                      <span>Grade: <%= jobseeker_certificate.grade %></span>
+                    </div>
+                  </div>
+              <% end %>
+            </div>
+        <% end %>
+
+
+        <% if jobseeker.skills.count > 0 %>
+            <!-- Skills -->
+            <div class="row">
+              <strong class="heading">Skills</strong>
+              <ul>
+
+                <% jobseeker.skills.each do |skill| %>
+                    <li><%= skill.name %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+
+
+        <% if jobseeker.tags.count > 0 %>
+            <!-- #Tag -->
+            <div class="row">
+              <strong class="heading">#Tag</strong>
+              <ul>
+
+                <% jobseeker.tags.each do |tag| %>
+                    <li><%= tag.name %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+      </div>
+
+      <div class="clearfix"></div>
+
+    </div>
+    <div class="mobile-fit bt-mob" style="cursor: pointer; width:600px; height:60px; background:#324f8c; display:block; text-align:center; margin-bottom: 20px; color:#fff; line-height:60px; font-size:18px; margin: 0px auto;">
+      <a href="<%= jobseeker.profile_path_for_employer %>" style="display: block; text-decoration: none; width: 100%; height: 60px; color: #fff">Visit <%= jobseeker.user.is_male? ? "his" : "her" %> Profile</a>
+    </div>
+
+  </div>
+  <div class="clearfix"></div>
+
+
+  <!-- social media -->
+  <div class="mobile-fit" style="text-align:center;  width: 600px; margin: 0px auto; ">
+    <div style="margin:0px auto; margin-top: 20px;">
+
+
+
+      <!-- Footer -->
+      <div class="container-footer">
+        <div class="social">
+          <a href="https://www.facebook.com/BloovoWorld/" target="_blank"><img src="https://gallery.mailchimp.com/68c0b59f3062e3ba384dbcda4/images/0d7725a7-2e77-4378-862b-9e1591113532.png"></a>
+          <a href="https://twitter.com/Bloovo" target="_blank"><img src="https://gallery.mailchimp.com/68c0b59f3062e3ba384dbcda4/images/c65352d5-abd4-4155-8bdd-665ba31228eb.png"></a>
+          <a href="https://www.linkedin.com/company/bloovo" target="_blank"><img src="https://gallery.mailchimp.com/68c0b59f3062e3ba384dbcda4/images/01593a35-31de-411b-9170-f2fe0c5f58d9.png"></a>
+          <a href="https://plus.google.com/+Bloovo" target="_blank"><img src="https://gallery.mailchimp.com/68c0b59f3062e3ba384dbcda4/images/468553e6-a15d-46d9-ad03-fd78ac2a0c70.png"></a>
+          <a href="https://www.instagram.com/bloovo_/" target="_blank"><img src="https://gallery.mailchimp.com/68c0b59f3062e3ba384dbcda4/images/133ea9f7-dcc1-4a61-acb5-aea3d8a7f374.png"></a>
+          <a href="https://www.youtube.com/channel/UCuRLdElkaZaipKjKVJgICDQ" target="_blank"><img src="https://gallery.mailchimp.com/68c0b59f3062e3ba384dbcda4/images/79543d64-30ba-4117-a579-dc0301986642.png"></a>
+        </div>
+        <h4 class="mob-text" style="font-size: 12px; color: #fff">Copyright @ BLOOVO Middle East FZ LLC. All Rights Reserved.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

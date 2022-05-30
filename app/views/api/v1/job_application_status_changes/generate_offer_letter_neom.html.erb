@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+
+    body {
+      height: 842px;
+      width: 595px;
+      /* to centre page on screen*/
+      margin-left: auto;
+      margin-right: auto;
+      font-family: sans-serif;
+    }
+    /*Size : 8.27in and 11.69 inches*/
+
+    @page Section1 {
+      size: 8.27in 11.69in;
+      margin: .5in .5in .5in .5in;
+      mso-header-margin: .5in;
+      mso-footer-margin: .5in;
+      mso-paper-source: 0;
+    }
+
+    /* style */
+    h1{
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      font-family: sans-serif;
+      margin-bottom: 50px;
+    }
+
+    div.Section1 {
+      page: Section1;
+    }
+    .logo_letter{
+      text-align: right;
+    }
+
+    span{
+      font-size: 14px;
+      display:block;
+    }
+    p{
+      font-size: 14px;
+      display: block;
+      line-height: 23px;
+
+    }
+    table{
+      font-size: 14px;
+    }
+    table tr td{
+      padding-bottom: 10px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<div class="Section1">
+
+  <!-- logo -->
+  <div class="logo_letter">
+    <%= wicked_pdf_image_tag @current_company.avatar(:original) %>
+  </div>
+
+  <!-- title -->
+  <h1>Expat External Offer CONSULTANT</h1>
+
+  <span>Candidate Name</span><br>
+  <span><%= Date.today.strftime("%A, %d %b %Y") %></span><br>
+  <span>Dear Candidate <%= @jobseeker.full_name %>,</span><br><br>
+
+  <!-- contetnt -->
+  <p>We are delighted to offer you the position of Job <%= params[:job_application_status_change][:offer_letter_attributes][:title]%> at NEOM.</p>
+  <p>The position will be based in Riyadh offices of NEOM on a temporary basis. This contract is for a period of 6/12 months subject to the terms and conditions outlined on page 2.</p>
+  <p>As discussed, there are many components within the package we wish to offer which are outlined below:</p>
+
+  <!-- table -->
+  <table>
+    <tr>
+      <td width="180"><strong>Basic Salary</strong><td>
+      <td><%= params[:job_application_status_change][:offer_letter_attributes][:basic_salary]%> SAR per Calender month<td>
+    </tr>
+    <tr>
+      <td width="180"><strong>Housing Allowance</strong><td>
+      <td><%= params[:job_application_status_change][:offer_letter_attributes][:housing_salary]%> SAR per Calender month<td>
+    </tr>
+    <tr>
+      <td width="180"><strong>Transportation Allowance</strong><td>
+      <td><%= params[:job_application_status_change][:offer_letter_attributes][:transportation_salary]%> SAR per Calender month<td>
+    </tr>
+    <tr>
+      <td width="180"><strong>Mobile Allowance</strong><td>
+      <td><%= params[:job_application_status_change][:offer_letter_attributes][:mobile_allowance_salary]%>  SAR per Calender month<td>
+    </tr>
+  </table>
+  <br>
+
+  <!-- table -->
+  <table>
+    <tr>
+      <td width="180"><strong>Total Salary Payable</strong><td>
+      <td><%= params[:job_application_status_change][:offer_letter_attributes][:total_salary]%>  SAR per Calender month<td>
+    </tr>
+  </table>
+
+  <p>In addition to the above salary you shall also be eligible for the following additional benefits in accordance with Company policy: </p>
+  <p><strong>Relocation Flight:</strong> A economy/business class relocation flight shall be provided for you.</p>
+  <p><strong>Medical:</strong> You are eligible for medical insurance plan.</p>
+</div>
+<div class="Section1">
+
+
+
+
+  <!-- contetnt -->
+  <span><strong class="line">Terms and Conditions:</strong></span>
+  <br>
+
+  <!-- table -->
+  <table>
+    <tr>
+      <td width="30">I.</td>
+      <td>This offer is contingent upon all background checks being successfully cleared.</td>
+    </tr>
+    <tr>
+      <td width="30">II.</td>
+      <td>This offer is contingent upon the signatory being able to obtain the relevant permit/visa to enter the Kingdom of Saudi Arabia to work.</td>
+    </tr>
+    <tr>
+      <td width="30">III.</td>
+      <td>NEOM has a probationary period of 90 calendar days during which either party may terminate the contract with 7 days’ notice.  After successfully completing probation, either party must provide 60 calendar days’ to terminate the contract, as per NEOM policies.</td>
+    </tr>
+  </table>
+
+  <p>This offer is subject to the finalisation of the employment contract between the Company and you. The Company shall provide you with the employment contract upon your acceptance of this offer, as referred to below.</p>
+  <p>This offer is subject to NEOM policies, procedures, code of conduct and other related policies as may be amended from time to time.</p>
+  <p>This offer shall be governed by and construed in accordance with the laws of the Kingdom of Saudi Arabia and the parties agree to submit to the exclusive jurisdiction of the courts of the Kingdom of Saudi Arabia></p>
+  <p>This offer is valid until <strong><%= params[:job_application_status_change][:offer_letter_attributes][:util_date]%></strong>. If this offer is acceptable to you, please sign a copy of this letter (and the Employee Confidentiality Agreement) and email it back to <a href="mailto:<%= @current_user.email %>"><%= @current_user.email %></a> immediately. </p>
+  <p>If you have any questions, please do not hesitate to contact either myself or a member of the Human Resources team.</p>
+  <p>We look forward to welcoming you on board. </p>
+  <br>
+  <p>Regards</p>
+  <br>
+  <p><%= @current_user.full_name %><br><%= @current_user.position %><br>NEOM</p>
+</div>
+<div class="Section1">
+
+
+  <br>
+  <p>I, Candidate Name, confirm that I have received and reviewed the enclosed terms of this offer of employment and herby confirm my acceptance of the offer.</p>
+  <p>By signing this letter, I grant NEOM and its associated organisations, authorisation to conduct any necessary background or security checks, in order to prepare my contract of employment and begin the mobilisation process. The validity of this employment offer is subject to receipt of satisfactory references and background checks.</p>
+  <br>
+
+  <!-- table -->
+  <table>
+    <tr>
+      <td width="140">Signed:</td>
+      <td>----------------------------------------------------</td>
+    </tr>
+    <tr>
+      <td width="140">Name:<br>(As per Passport)</td>
+      <td>----------------------------------------------------</td>
+    </tr>
+    <tr>
+      <td width="140">Date:<br>(DD/MM/YY)</td>
+      <td>----------------------------------------------------</td>
+    </tr>
+  </table>
+</div>
+<div class="Section1">
+
+
+  <span><strong class="line">Employee Confidentiality Agreement</strong></span>
+  <p>NEOM employees are expected to execute their duties on behalf of NEOM with the highest degree of care and professionalism.  Employees may obtain or use confidential information as a necessary part of their role and ensuring that confidential information is protected and not disclosed is essential.</p>
+  <br>
+
+  <!-- table -->
+  <table>
+    <tr>
+      <td width="30">1.1</td>
+      <td>For the purposes of this Policy, confidential information may include:</td>
+    </tr>
+    <tr>
+      <td width="30"></td>
+      <td>
+        <ul>
+          <li>financial information about NEOM;</li>
+          <li>personnel records of any employee;</li>
+          <li>payroll records;</li>
+          <li>financial, health and other personal information about NEOM candidates, employees or partners;</li>
+          <li>information about NEOM systems or information contained in its databases;</li>
+          <li>information acquired in the course of NEOM work regarding persons or entities with which NEOM has, had, was or is considering business relations;</li>
+          <li>any other sensitive or provide information belonging to or relating to NEOM.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td width="30">1.2</td>
+      <td>A NEOM employee must not disclose any confidential information, whether hard copy, electronic or verbal, to any person or entity outside NEOM without appropriate permission.</td>
+    </tr>
+    <tr>
+      <td width="30">1.3</td>
+      <td>
+        <p>If a NEOM employee has any questions about the application of this Policy, or is in any doubt as to whether information can be shared, they must discuss with their Manager and/or Human Resources representative.</p>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+    <strong>
+      I acknowledge that I have read and agree to comply with this Employee Confidentiality Policy.  I understand and agree that any violation of this Policy would be a serious matter which may lead to disciplinary action up to and including termination of my employment and possible other legal ramifications.
+    </strong>
+  </p>
+  <br>
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>--------------------------------------------</td>
+      <td>Title</td>
+      <td>--------------------------------------------</td>
+    </tr>
+    <tr>
+    <tr>
+      <td>Signature</td>
+      <td>--------------------------------------------</td>
+      <td>Date</td>
+      <td>--------------------------------------------</td>
+    </tr>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

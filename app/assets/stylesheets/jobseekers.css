@@ -1,0 +1,278 @@
+body {
+    letter-spacing: 0.2px;
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'HelveticaNeue' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #eef1f3;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 500;
+    margin: 15px 0px;
+}
+
+/*font*/
+@font-face {
+    font-family: 'helveticaneuemedium';
+    src: url('/fonts/helvertica/helveticaneue_medium-webfont.woff2') format('woff2'),
+    url('/fonts/helvertica/helveticaneue_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/helvertica/HelveticaNeue.woff2') format('woff2'),
+    url('/fonts/helvertica/HelveticaNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*icon*/
+@font-face {
+    font-family: 'icomoon';
+    src: url('/fonts/bloovo-font/icomoon.eot?4zmujv');
+    src: url('/fonts/bloovo-font/icomoon.eot?4zmujv#iefix') format('embedded-opentype'),
+    url('/fonts/bloovo-font/icomoon.ttf?4zmujv') format('truetype'),
+    url('/fonts/bloovo-font/icomoon.woff?4zmujv') format('woff'),
+    url('/fonts/bloovo-font/icomoon.svg?4zmujv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-round:before {
+    content: "\e907";
+}
+
+.icon-location:before {
+    content: "\e981";
+}
+
+.icon-company:before {
+    content: "\e983";
+}
+
+.icon-account:before {
+    content: "\e984";
+}
+
+.icon-sector:before {
+    content: "\e985";
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.light {
+    color: #666;
+}
+
+.clr {
+    clear: both;
+}
+
+.padding-20-0 {
+    padding-top: 20px;
+}
+
+.save-pdf {
+    width: 1024px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    padding-bottom: 66px;
+    page-break-inside:auto;
+}
+
+.save-pdf P {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.res-hed {
+    /*background: <%= Rails.application.secrets[:ATS_CSS]["colors"]["primary"] %>;*/
+    padding: 30px;
+}
+
+.res-lft {
+    float: left;
+}
+
+.res-lft h1 {
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'helveticaneuemedium';
+}
+
+.res-lft h4 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.res-lft .white {
+    color: #fff;
+}
+
+.res-lft i {
+    color: #fff;
+    padding-right: 6px;
+}
+
+.res-rgt {
+    float: right;
+    width: 170px;
+    height: 170px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.res-rgt i {
+    color: #333;
+    font-size: 50px;
+    line-height: 170px;
+}
+
+.res-rgt img {
+    width: 100%
+}
+
+.res-contnt {
+    padding: 30px 0px;
+}
+
+.res-contnt h1 {
+    color: #333;
+    border-bottom: solid 1px #e2e2e2;
+    font-size: 30px;
+    font-family: 'helveticaneuemedium';
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+.res-contnt .cnt-inf .left {
+    width: 550px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.res-contnt h5 {
+    font-size: 18px;
+}
+
+.genearalinfo {
+    margin-top: 30px;
+}
+
+.genearalinfo .ginfo {
+    border-left: solid 3px #374b61;
+    width: 48%;
+    float: left;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.ginfo h3 {
+    margin: 0px;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.ginfo p {
+    color: #666;
+    margin: 0px;
+}
+
+.logo-btm {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 110px;
+    z-index: 999;
+}
+
+.logo-btm img {
+    width: 100%;
+}
+
+.logo-bg {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+}
+
+.logo-bg img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.uls h4 {
+    color: #333;
+    font-size: 18px;
+}
+
+.uls i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.uls .light {
+    padding-left: 25px;
+}
+
+.uls .light h4 {
+    font-size: 18px;
+    color: #666;
+}
+
+.uls .light h5 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 25px;
+}
+
+.uls .light ul, li {
+    list-style: inside;
+    font-size: 18px;
+    color: #666;
+    padding: 0px;
+    padding-bottom: 15px;
+}
+
+.uls .navy {
+    color: #333
+}
+
+.ski ul, li {
+    padding: 0px 0px 15px 0px;
+}
+.ftr-logo{ border-top:  solid 2px #e2e2e2 ; position: relative; height: 68px;}
+.ftr-logo img{width:110px; position: absolute; right: 0px;top: 20px;}

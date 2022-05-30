@@ -1,0 +1,19 @@
+<div>
+  <h1>Work Experience</h1>
+  <div class="padding-20-0">
+    <% @jobseeker.jobseeker_experiences.each do |jobseeker_experience| %>
+        <div class="uls">
+          <h4><i class="icon-round"></i> <%= jobseeker_experience.company_name %></h4>
+          <div class="light">
+            <h4><%= jobseeker_experience.position %></h4>
+            <h4><%= "#{jobseeker_experience.city.try(:name)}, #{jobseeker_experience.country.try(:name)}" %></h4>
+            <h4><%= "#{get_month_year(jobseeker_experience.from, jobseeker_experience.to)} (#{subtract_to_years_months(jobseeker_experience.from, jobseeker_experience.to)})" %></h4>
+            <% if jobseeker_experience.description %>
+                <h5>Roles And Responsiblities</h5>
+                <%= jobseeker_experience.description.html_safe %>
+          <% end %>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>

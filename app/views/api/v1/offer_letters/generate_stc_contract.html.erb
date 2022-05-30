@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title><%= Rails.application.secrets[:ATS_NAME]["original_name"] %></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+        @page {
+            size: A4;
+            margin: 27mm 16mm 27mm 16mm;
+            -webkit-print-color-adjust: exact; 
+        }
+
+        @media print {
+
+            html,
+            body {
+                width: 210mm;
+                height: 297mm;
+                direction: rtl;
+                -webkit-print-color-adjust: exact; 
+            }
+
+            table tr {
+                page-break-inside: avoid;
+            }
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .logo_letter {
+            text-align: center;
+        }
+
+        .logo_letter img {
+            width: 120px;
+        }
+
+        p {
+            font-size: 14px;
+            display: block;
+            line-height: 23px;
+
+        }
+
+        table {
+            font-size: 14px;
+            border: solid 1px #e5e5e5;
+            margin: 0px auto;
+            width: 100%;
+            border-spacing: 0;
+            direction: rtl;
+        }
+
+        table tr td {
+            border-bottom: solid 1px #e5e5e5;
+            line-height: 20px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        table tr td.eng {
+            text-align: left;
+            background: #fff;
+            border-right: solid 1px #e5e5e5;
+            color: #666;
+            padding: 8px;
+        }
+
+        table tr td.eng strong {
+            font-weight: 600 !important;
+            color: #333;
+        }
+
+        table tr td.arabic {
+            font-family: 'Cairo', sans-serif;
+            text-align: right;
+            font-size: 13px;
+            background: #fff;
+            color: #666;
+            /* direction: rtl; */
+            padding: 8px;
+        }
+
+        table tr td.arabic strong {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700 !important;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- logo -->
+    <div class="logo_letter">
+      <img src="<%= File.expand_path('app/assets/images/offer-logo.png') %>">
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <table class="table" align="center" width="100%">
+        <tr>
+            <td width="25%" class="en"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5; background-color: #29504C; color: #fff; direction: rtl; text-align: right">
+                <strong style="color: #fff;">الاسم</strong>
+            </td>
+            <td width="25%" class="arabic"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5; background-color: #29504C; color: #fff; direction: rtl; text-align: right">
+                <strong style="color: #fff;">الدرجة</strong>
+            </td>
+            <td width="25%" class="arabic"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5; background-color: #29504C; color: #fff; direction: rtl; text-align: right">
+                <strong style="color: #fff;">المسمى الوظيفي</strong>
+            </td>
+            <td width="25%" class="arabic"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5; background-color: #29504C; color: #fff; direction: rtl; text-align: right">
+                <strong style="color: #fff;">تاريخ المباشرة</strong>
+            </td>
+            <td width="25%" class="arabic"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5; background-color: #29504C; color: #fff; direction: rtl; text-align: right">
+                <strong style="color: #fff;">الوكالة</strong>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" class="en"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5; direction: rtl; text-align: right">
+                <strong><%= @job_application.jobseeker.full_name %></strong>
+            </td>
+            <td width="25%" class="arabic"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5;direction: rtl; text-align: right">
+                <strong><%= @job_application.job.grade.try(:name) %></strong>
+            </td>
+            <td width="25%" class="arabic"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5;direction: rtl; text-align: right">
+                <strong><%= @job.title %></strong>
+            </td>
+            <td width="25%" class="arabic"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5;direction: rtl; text-align: right">
+                <strong><%= @offer_letter.joining_date %></strong>
+            </td>
+            <td width="25%" class="arabic"
+                style="padding: 10px; font-family: 'Cairo', sans-serif; border:1px solid #e5e5e5;direction: rtl; text-align: right">
+                <strong><%= @job.organization.try(:name) %></strong>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table" align="center" width="100%" style="margin-bottom: 15px; border: none">
+        <tr>
+            <td width="50%" class="arabic" style="font-family: 'Cairo', sans-serif; border:none; text-align: center">
+                <strong> السادة الشركة العربية لخدمات الأنترنت والإتصالات </strong>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" class="arabic" style="font-family: 'Cairo', sans-serif; border:none; text-align: right">
+              السلام عليكم ورحمة الله وبركاته,
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" class="arabic" style="font-family: 'Cairo', sans-serif; border:none; text-align: right">
+                إشارة إلى العقد المبرم معكم لتقديم خدمات الإسناد الإداري، نأمل منكم المباشرة بإصدار عرض وظيفي وعقد عمل للمرشح الموضحة هويته بعاليه خلال 3 أيام عمل حسب الإجراء المتبع لنتمكن من استكمال إجراءات التوظيف.
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" class="arabic" style="font-family: 'Cairo', sans-serif; border:none; text-align: right">
+                تقبلوا التحيات والتقدير ولكم جزيل الشكر.
+            </td>
+        </tr>
+    </table>
+
+    <table class="table" align="center" width="100%" style="margin-bottom: 15px; border: none">
+        <tr>
+            <td Pwidth="50%" class="eng" style="font-family: 'Cairo', sans-serif; border:none; text-align: right">
+                <br>
+                <br>
+                <br>
+                <strong>مدير إدارة التوظيف</strong><br>
+                <strong>عبدالرحمن بن عبدالعزيز الخريجي</strong>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

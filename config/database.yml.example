@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: robert
+  password: ''
+  database: bloovo_dev
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+
+
+staging:
+  <<: *default
+
+test:
+  <<: *default
+  database: bloovo_test
+
+production:
+  <<: *default

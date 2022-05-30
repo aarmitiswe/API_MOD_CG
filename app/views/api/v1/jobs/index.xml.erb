@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response version="2">
+  <query><%= params[:query] %></query>
+  <location>United Arab Emirates, Dubai</location>
+  <totalresults><%= @q.result.count %></totalresults>
+  <start><%= (@jobs.current_page - 1) * Job.per_page %></start>
+  <end><%= ((@jobs.next_page || 1) - 1) * Job.per_page %></end>
+  <results>
+    <% @jobs.each do |job| %>
+
+      <result>
+        <jobkey><%= job.id %></jobkey>
+        <jobtitle><%= job.title %></jobtitle>
+        <company><%= job.company.name %></company>
+        <city><%= job.city.try(:name) %></city>
+        <country><%= job.country.try(:name) %></country>
+        <formattedLocation><%= "#{job.city.try(:name)}, #{job.country.try(:name)}" %></formattedLocation>
+        <source>Bloovo</source>
+        <date><%= job.created_at %></date>
+        <snippet>
+          <%= job.description %>
+        </snippet>
+        <url><%= "#{Rails.application.secrets[:FRONTEND]}/#{job.country.try(:name).try(:parameterize)}/jobs/#{job.city.try(:name).try(:parameterize)}/#{job.sector.try(:name).try(:parameterize)}/#{job.title.try(:parameterize)}-#{job.id}" %></url>
+        <logo><%= job.company.avatar(:original) %></logo>
+      </result>
+    <% end %>
+  </results>
+</response>

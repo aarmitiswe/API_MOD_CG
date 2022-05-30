@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= wicked_pdf_stylesheet_link_tag "blogs.css" -%>
+  <title><%= @blog.title %></title>
+</head>
+
+<body>
+<div class="save-pdf">
+  <div class="logo-btm"><%= wicked_pdf_image_tag '/images/email-logo.png' %></div>
+  <div class="logo-bg"><%= wicked_pdf_image_tag '/images/resume-bg.png' %></div>
+
+  <div class="res-hed">
+    <h1><%= @blog.title %></h1>
+    <h3><span> <%= "Posted By : #{@blog.author.name}" %></span> <span><i class="icon-date"></i> <%= @blog.created_at.strftime('%d %B, %y') %></span>  </h3>
+  </div>
+
+  <div class="blog-image"><%= wicked_pdf_image_tag @blog.avatar %></div>
+
+  <div class="res-contnt">
+    <%= @blog.description.html_safe %>
+  </div>
+</div>
+</body>
+</html>

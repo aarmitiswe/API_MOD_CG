@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Shared Jobseekers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sender</th>
+      <th>Receiver</th>
+      <th>Jobseeker</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shared_jobseekers.each do |shared_jobseeker| %>
+      <tr>
+        <td><%= shared_jobseeker.sender %></td>
+        <td><%= shared_jobseeker.receiver %></td>
+        <td><%= shared_jobseeker.jobseeker %></td>
+        <td><%= link_to 'Show', shared_jobseeker %></td>
+        <td><%= link_to 'Edit', edit_shared_jobseeker_path(shared_jobseeker) %></td>
+        <td><%= link_to 'Destroy', shared_jobseeker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shared jobseeker', new_shared_jobseeker_path %>

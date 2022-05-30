@@ -1,0 +1,406 @@
+<style type="text/css">
+  #outlook a {
+    padding: 0;
+  }
+
+  .ReadMsgBody {
+    width: 100%;
+  }
+
+  .ExternalClass {
+    width: 100%;
+  }
+
+  .ExternalClass * {
+    line-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  table,
+  td {
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+  }
+
+  img {
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+  }
+
+  p {
+    display: block;
+    margin: 13px 0;
+  }
+
+  .anchor {
+    color: #FFF;
+    text-decoration: none
+  }
+
+  .bitton-big {
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+
+  .logo-email {
+    width: 100%;
+  }
+
+  .matching {
+    float: left;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+
+  }
+  .circle{
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    border-radius: 160px;
+    border: 3px solid #e1e1e1;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 75px;
+
+  }
+  .circle span{
+    text-align: center;
+    font-size: 16px;
+    color: #3379bd;
+  }
+
+  .matching p {
+    color: #4f788a;
+    margin-top: 10px;
+  }
+
+  .primary {
+    background-color: <%=Rails.application.secrets[:ATS_CSS]["colors"]["primary"] %>;
+  }
+</style>
+<style type="text/css">
+  @media only screen and (max-width:480px) {
+    @-ms-viewport {
+      width: 320px;
+    }
+    @viewport {
+      width: 320px;
+    }
+  }
+</style>
+<style type="text/css">
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+</style>
+<style type="text/css">
+  @media only screen and (min-width:480px) {
+    .mj-column-per-100 {
+      width: 100% !important;
+      max-width: 100%;
+    }
+  }
+</style>
+<style type="text/css">
+  @media only screen and (max-width:480px) {
+    table.full-width-mobile {
+      width: 100% !important;
+    }
+    td.full-width-mobile {
+      width: auto !important;
+    }
+  }
+</style>
+</head>
+
+<body style="background-color:#F4F4F4;">
+<div style="background-color:#F4F4F4;">
+  <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-top:30px;text-align:center;vertical-align:top;">
+          <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tr>
+                <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                    <tbody>
+                    <tr>
+                      <td style="width:120px;">
+                        <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/mail-logo.png" align="middle" style="width: 120px;">
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+          <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tr>
+                <td style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                  <p style="border-top:solid 1px #f1f1f1;font-size:1;margin:0px auto;width:100%;"></p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-top:0px;text-align:center;vertical-align:top;">
+          <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tr>
+                <td align="left" style="font-size:0px;padding:10px 25px;padding-top:0px;padding-right:40px;padding-bottom:0px;padding-left:40px;word-break:break-word;">
+                  <div style="font-family:Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;color:#000;">
+                    <p style="line-height:18px; font-size:14px; text-align:right">
+                      <%= Date.today.strftime("%d %b, %Y") %>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-top:0px;text-align:center;vertical-align:top;">
+          <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tr>
+                <td align="left" style="font-size:0px;padding:10px 25px;padding-top:0px;padding-right:40px;padding-bottom:0px;padding-left:40px;word-break:break-word;">
+                  <div style="font-family:Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;color:#000;">
+                    <p style="line-height:18px; font-size:14px">
+                      Hello <%= company.name %>,
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-top:0px;text-align:center;vertical-align:top;">
+          <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tr>
+                <td align="left" style="font-size:0px;padding:10px 25px;padding-top:0px;padding-right:40px;padding-bottom:0px;padding-left:40px;word-break:break-word;">
+                  <div style="font-family:Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;color:#000;">
+                    <p style="line-height:18px; font-size:14px">New applicants applied for the following job you have posted:</p>
+                    <p style="line-height:18px; font-size:14px"><b><%= job.title %></b><br></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+          <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tr>
+                <td style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                  <p style="border-top:solid 1px #f1f1f1;font-size:1;margin:0px auto;width:100%;"></p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <% applicants.each do |jobseeker| %>
+    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+        <tr>
+          <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-top:0px;text-align:center;vertical-align:top;">
+            <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                <tr>
+                  <td align="left" colspan="3" style="font-size:0px;padding:10px 25px;padding-top:0px;padding-right:40px;padding-bottom:0px;padding-left:40px;word-break:break-word;">
+                    <div style="font-family:Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;color:#000;">
+                      <p style="line-height:18px; font-size:14px">Candidate Details:</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td width="90" align="left" style="font-size:0px;padding-top:0px;padding-bottom:0px;padding-left:40px;word-break:break-word; width: 90px">
+                    <div style="font-family:Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;color:#000;">
+                      <div style="width: 80px; height:80px; background:#f1f1f1; overflow: hidden; border:1px solid #f1f1f1;">
+                        <img src="<%= jobseeker.user.avatar %>" style="width: 100%; height: 80px; object-fit: cover">
+                      </div>
+                    </div>
+                  </td>
+                  <td align="left" style="font-size:0px;padding-top:0px;padding-bottom:0px;word-break:break-word;">
+                    <div style="font-family:Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;color:#000;">
+                      <p style="font-size:14px; margin:0px;">
+                        <b><%= jobseeker.full_name %></b>
+                      </p>
+                      <p style="font-size:14px; margin:0px;">
+                        <%= jobseeker.current_position.blank? ? "No Title Available" : jobseeker.current_position %>
+                      </p>
+                      <p style="font-size:14px; margin:0px;">
+                        <%= jobseeker.current_company.try(:company_name).blank? ? "No Company Available" : jobseeker.current_company.try(:company_name) %>
+                      </p>
+                      <p style="font-size:14px; margin:0px;">
+                        <%= "#{jobseeker.user.city.try(:name)} #{jobseeker.user.country.try(:name)}" %>
+                      </p>
+                      <p style="font-size:14px; margin:0px;">
+                        <%= jobseeker.years_of_experience %> Years of Experience
+                      </p>
+                      <p style="font-size:14px; margin:0px;">
+                        <a href="<%= "#{Rails.application.secrets[:FRONTEND]}/employer/candidate/" %><%= jobseeker.user.id %>/<%= jobseeker.user.full_name.parameterize %>/profile?job_id=<%= job.id %>" class="primary" style="float:left; width: 120px; height: auto; padding: 8px; text-align: center; color: #fff; margin-top: 10px; text-decoration: none;  ">View Profile</a>
+                      </p>
+                    </div>
+                  </td>
+                  <td align="left" style="font-size:0px;padding:10px 25px;padding-top:0px;padding-right:40px;padding-bottom:0px;padding-left:40px;word-break:break-word;">
+                    <div style="font-family:Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;color:#000;">
+                      <div class="matching">
+                        <div class="circle" style="justify-content: center; align-items: center"><span><%= Jobseeker.calculate_matching_percentage(job, {id_in: ([jobseeker.id] << -1)}, 0, 100, "matching_percentage").first.matching_percentage.round(1) %>%</span></div>
+                        <p>Matching Percentage</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  <% end %>
+  <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+          <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tr>
+                <td style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                  <p style="border-top:solid 1px #f1f1f1;font-size:1;margin:0px auto;width:100%;"></p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:20px 0;padding-top:0px;text-align:center;vertical-align:top;">
+          <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tr>
+                <td align="center" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                    <tr>
+                      <td align="center" role="presentation" style="border:none;cursor:auto;padding:10px 25px;" valign="middle" class="primary">
+                        <p class="primary" style="color:#ffffff;font-size:14px;font-weight:normal;line-height:120%;Margin:0;text-decoration:none;text-transform:none;">
+                          <a href="<%= "#{Rails.application.secrets[:FRONTEND]}/employer" %>/jobs/<%= job.id %>/<%= job.title.parameterize %>/applicants" class="anchor">See All Applicants</a>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;"></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="Margin:0px auto;max-width:600px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+      <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:10px 0 20px 0;text-align:center;vertical-align:top;">
+          <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tr>
+                <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                  <div style="font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:1;text-align:center;color:#9B9B9B;">Copyright &copy;
+                    <%= Rails.application.secrets[:ATS_NAME]["business_name"] %>. All Rights Reserved.</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>

@@ -1,0 +1,81 @@
+body{ letter-spacing:0.2px; line-height: 1; font-size:16px;font-family:'HelveticaNeue'!important;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
+    background:#eef1f3; padding: 0px; margin: 0px;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{font-weight:500; margin: 15px 0px; }
+/*font*/
+@font-face {
+    font-family: 'helveticaneuemedium';
+    src: url('/fonts/helvertica/helveticaneue_medium-webfont.woff2') format('woff2'),
+    url('/fonts/helvertica/helveticaneue_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/helvertica/HelveticaNeue.woff2') format('woff2'),
+    url('/fonts/helvertica/HelveticaNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*icon*/
+@font-face {
+    font-family: 'icomoon';
+    src:url('/fonts/bloovo-font/icomoon.eot?4zmujv');
+    src:url('/fonts/bloovo-font/icomoon.eot?4zmujv#iefix') format('embedded-opentype'),
+    url('/fonts/bloovo-font/icomoon.ttf?4zmujv') format('truetype'),
+    url('/fonts/bloovo-font/icomoon.woff?4zmujv') format('woff'),
+    url('/fonts/bloovo-font/icomoon.svg?4zmujv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-date:before {
+    content: "\e986";
+}
+
+.light{ color: #7ba1b2}
+.clr{ clear: both }
+.padding-20-0{ padding-top: 20px;}
+.save-pdf{
+    width: 1024px;
+    /*height:1430px;*/
+    margin: 0 auto;
+    background:#fff;
+    position: relative;
+    padding-bottom: 80px;
+}
+.save-pdf P{ font-size:18px; line-height:26px; }
+.res-hed{ background:#374b61; padding: 30px; padding-top: 10px;}
+.res-hed h1{ color: #fff; font-family:'helveticaneuemedium'; font-size: 36px; line-height:56px; }
+.res-hed h3{ color: #fff;  font-size: 20px;}
+.res-hed span{ padding-right: 20px; }
+.res-hed span i{ font-size:16px; }
+
+.blog-image{ padding: 30px; padding-bottom: 0px;}
+.blog-image img{ width: 100%}
+.res-contnt{ padding: 15px 30px; }
+.res-contnt p{ font-size:18px; color:#648b9d; line-height:28px; }
+
+.res-contnt h1{ color:#374b61; border-bottom:solid 1px #e2e2e2; font-size:30px;font-family:'helveticaneuemedium';padding-bottom:10px; margin: 0px;  padding-top:20px;   }
+.res-contnt .cnt-inf .left{ width: 550px;color:#374b61; margin-top: 10px;}
+.res-contnt h5{ font-size:18px; }
+.logo-btm{ position: absolute; bottom: 20px; right: 30px; width: 110px; z-index: 999;}
+.logo-btm img{ width:100%}
+.logo-bg{ position: absolute; bottom: 0px; right: 0px; width: 400px;}
+.logo-bg img{ width:100%;opacity: 0.5}
+.uls .light{ padding-left:25px;}
+.uls .light h4{font-size:18px; color:#648b9d }
+.uls .light h5{font-size:18px; color:#374b61; margin-top: 25px; }
+.uls .light ul,li{ list-style:inside;font-size:18px; color: #648b9d;  padding: 0px; padding-bottom:15px; }
+.uls .navy{ color:#374b61 }
+.ski ul,li{ padding:0px 0px 15px 0px}

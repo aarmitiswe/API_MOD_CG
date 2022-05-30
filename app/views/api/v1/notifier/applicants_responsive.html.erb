@@ -1,0 +1,403 @@
+<style>
+
+  body{
+    background: #f1f1f1;
+    font-family:sans-serif;
+    font-weight: normal;
+  }
+  a{
+    color: #374b61;
+    text-decoration: none;
+  }
+  .header{
+    width:100%;
+    height: auto;
+    background-color: #374b61;
+    height: 80px;
+  }
+  .wrapper{
+    width:100%;
+    margin:0px auto;
+  }
+  .container-email{
+    background:#fff;
+    margin:10px 0px;
+    padding:20px 30px;
+    text-align: center;
+    box-shadow: 0px 1px 9px 0px rgba(55, 75, 97, 0.09);
+    padding-bottom: 15px;
+  }
+  .container-email h4{
+    color: #3379bd;
+    font-weight:400;
+    font-size: 16px;  }
+  .container-footer{
+    text-align: center;
+  }
+
+  .user-pic{
+    width: 97px;
+    height: 97px;
+    margin: 0px auto;
+    overflow: hidden;
+    border:1px solid #f1f1f1;
+    -moz-border-radius: 160px; -webkit-border-radius: 160px; border-radius: 160px;
+    margin-bottom: 20px;
+    float: left;
+    background-color:#badcfd;
+    background-image: url(images-email/user.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+  }
+  .user-pic i{
+    text-align: center;
+    display: block;
+  }
+  .user-pic img{
+    width: 100%;
+    height: 105px;
+    margin: 0px auto;
+  }
+
+  .company-pic{
+    width: 97px;
+    height: 95px;
+    margin: 0px auto;
+    overflow: hidden;
+    border:1px solid #f1f1f1;
+    -moz-border-radius: 160px; -webkit-border-radius: 160px; border-radius: 160px;
+    margin-bottom: 20px;
+    float: left;
+    background-color:#badcfd;
+    background-image: url(images-email/company.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+  }
+  .company-pic i img{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+  .company-pic i{
+    text-align: center;
+    display: block;
+  }
+  .arrow{
+    float: left;
+  }
+  h1{
+    color:#374b61;
+    font-size:32px;
+    margin-bottom:0px;
+  }
+  h5{
+    color:#97aec6;
+    font-size:18px;
+    margin:10px 0px 30px 0px;
+    font-weight: 100;
+  }
+  .bitton{
+    background:#3379bd;
+    color: #fff;
+    font-size:16px;
+    border:none;
+    padding:8px 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+
+  }
+  .bitton-big{
+    background:#3379bd;
+    color: #fff;
+    font-size:16px;
+    border:none;
+    padding:15px 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+    margin: 5px auto;
+  }
+  .bitton:hover{
+    background:#165592;
+  }
+  h4{
+    color:#648b9d;
+    font-size:16px;
+    font-weight: 100;
+    margin:10px 0px;
+    font-size: 14px;
+    color: #86a9b9;
+  }
+
+  h2{
+    color:#648b9d;
+    font-size:22px;
+    font-weight: 400;
+    margin:10px 0px;
+    color: #374b61;
+  }
+  h3{
+    color:#648b9d;
+    font-size:20px;
+    font-weight: 400;
+    margin:10px 0px;
+    color: #374b61;
+    text-align: left;
+  }
+
+  p{
+    color: #6990a1;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 23px;
+    width: 100%;
+    margin: 0px auto;
+
+  }
+
+  .image-section{
+    width: 100%;
+    float: left;
+  }
+
+  .social{
+    margin: 0 auto;
+    width:280px;
+  }
+  .social a:hover{
+    opacity:0.6
+  }
+  .center-box-single{
+    width: 100px;
+    margin: 0px auto;
+  }
+  .logo{
+    width: 20%;
+    float: left;
+  }
+  .logo img{
+    height: 50px;
+    width: auto;
+    padding: 15px;
+  }
+  .heading{
+    float: left;
+    width: 80%;
+    text-align: right;
+  }
+  .heading h2{
+    color: #fff;
+    font-size:16px;
+    margin: 0px;
+    padding: 20px 15px 5px 0px;
+  }
+  .heading span{
+    color: #91aac6;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 15px 15px 0px;
+  }
+  .poll span{
+    font-size: 14px;
+    color: #4f788a;
+    text-align: left!important;
+    display: block;
+  }
+  .poll form{
+    text-align: left;
+    margin-top: 20px;
+    color: #4f788a;
+  }
+  .job-image{
+    width: 100%;
+
+    overflow: hidden;
+  }
+  .job-img-brdr{
+    background-color: #badcfd;
+    width: 115px;
+    height: 140px;
+    margin: 0 auto;
+    border: solid 1px #f1f1f1;
+  }
+  .job-img-brdr img{
+    width: 100%;
+    height: 100%;
+  }
+  .job-img-brdr i{
+    font-size: 40px;
+    line-height: 140px;
+    color: #374b61;
+  }
+  .job-description{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color:#4f788a;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .job-description h2{
+    font-size: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .job-description span{
+    font-size: 14px;
+    display: block;
+    padding-bottom: 6px;
+  }
+  .job-description button{
+    background: none;
+    border: none;
+  }
+  .matching{
+    width: 154px;
+    float: left;
+    height: 157px;
+  }
+  .matching p{
+    color:#4f788a;
+  }
+  .suggested-job{
+    padding: 20px 10px;
+
+  }
+  .clear{
+    clear: both;
+  }
+  .job-description h4{
+    font-size: 18px;
+    color: #374b61;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  .job-description b{
+    color: #3379bd
+  }
+  .container-email b{
+    color: #374b61;
+    font-weight: 400;
+  }
+</style>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <div class="header">
+      <div class="logo">
+        <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/mail-logo.png" align="middle">
+      </div>
+      <div class="heading">
+        <h2>New Applicants</h2>
+        <span><%= Date.today.strftime("%d %b, %Y") %></span>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="container-email">
+      <div class="image-section">
+        <div class="center-box-single">
+          <div class="user-pic">
+            <% if company.avatar.blank? %>
+                <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/empty-company-applicant.jpg" >
+            <% else %>
+                <img src="<%= company.avatar %>" >
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <h2>Hello <%= company.name %>,</h2>
+      <p>New applicants applied for the following job you have posted:</p><br>
+      <h2 style="color:#fff; background-color: #4f788a; padding: 10px; width: 60%; margin: 0px auto;"><%= job.title %></h2>
+
+    </div>
+
+    <% applicants.each do |jobseeker| %>
+      <div class="container-email suggested-job">
+        <div class="full-width">
+          <div class="job-image">
+            <div class="job-img-brdr">
+              <% if jobseeker.user.avatar.blank? %>
+                  <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/empty-profile-applicant.jpg" >
+              <% else %>
+                  <img src="<%= jobseeker.user.avatar %>" >
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="job-description">
+          <h2><%= jobseeker.full_name %></h2>
+          <span>
+          <i class="icon">
+              <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/icons-position.png" >
+            </i>&nbsp;<%= jobseeker.current_position.blank? ? "No Position Available" : jobseeker.current_position %>
+          </span>
+          <span>
+            <i class="icon">
+              <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/icons-company.png" >
+            </i>&nbsp;<%= jobseeker.current_experience.try(:company_name).blank? ? "No Company Available" : jobseeker.current_experience.try(:company_name) %>
+          </span>
+          <span>
+            <i class="icon">
+              <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/icons-location.png" >
+            </i>&nbsp;<%= "#{jobseeker.user.city.try(:name)} #{jobseeker.user.country.try(:name)}" %>
+          </span>
+          <span>
+            <i class="icon">
+              <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/icons-jobs.png" >
+            </i>&nbsp;<%= jobseeker.years_of_experience %> Years of Experience
+          </span>
+          <h4>Matching Percentage : <b><%= Jobseeker.calculate_matching_percentage(job, {id_in: ([jobseeker.id] << -1)}, 0, 100, "matching_percentage").first.matching_percentage.round(1) %>%</b> </h4>
+          <a href="<%= "#{Rails.application.secrets[:FRONTEND]}/employer/candidate/" %><%= jobseeker.user.id %>/<%= jobseeker.user.full_name.parameterize %>/profile?job_id=<%= job.id %>" class="bitton">View Profile</a>
+        </div>
+      </div>
+  <% end %>
+
+    <div class="container-email suggested-job" style="margin-bottom: 20px;">
+      <br>
+      <a href="<%= "#{Rails.application.secrets[:FRONTEND]}/employer" %>/jobs/<%= job.id %>/<%= job.title.parameterize %>/applicants" class="bitton-big">See All Applicants</a>
+      <br>
+      <br>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-footer">
+      <br>
+      <div class="social">
+        <a href="https://www.facebook.com/BloovoWorld/" target="_blank">
+          <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/facebook.png">
+        </a>
+        <a href="https://twitter.com/Bloovo" target="_blank">
+          <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/twitter.png">
+        </a>
+        <a href="https://www.linkedin.com/company/bloovo" target="_blank">
+          <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/linkedin.png">
+        </a>
+        <a href="https://plus.google.com/+Bloovo" target="_blank">
+          <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/google.png">
+        </a>
+        <a href="https://www.instagram.com/bloovo_/" target="_blank">
+          <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/instagram.png">
+        </a>
+        <a href="https://www.youtube.com/channel/UCuRLdElkaZaipKjKVJgICDQ" target="_blank">
+          <img src="<%= Rails.application.secrets[:EMAIL_IMAGES] %>/youtube.png">
+        </a>
+      </div>
+      <h4>Copyright @ BLOOVO Middle East FZ LLC. All Rights Reserved.</h4>
+      <br>
+    </div>
+</div>
+
+</body>

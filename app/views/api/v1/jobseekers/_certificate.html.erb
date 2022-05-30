@@ -1,0 +1,17 @@
+<div class="padding-20-0">
+  <h1>Certificate</h1>
+  <div class="padding-20-0">
+    <% @jobseeker.jobseeker_certificates.each do |jobseeker_certificate| %>
+        <div class="uls">
+          <h4><i class="icon-round"></i> <%= jobseeker_certificate.name %></h4>
+          <div class="light">
+            <h4><%= jobseeker_certificate.institute %> </h4>
+            <% if  jobseeker_certificate.grade %>
+                <h4><span class="navy"> <%= "Grade: #{jobseeker_certificate.grade}" %></span></h4>
+            <% end %>
+            <h4><%= "#{get_month_year(jobseeker_certificate.from, jobseeker_certificate.to)} (#{subtract_to_years_months(jobseeker_certificate.from, jobseeker_certificate.to)})" %></h4>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>
